@@ -42,23 +42,24 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20">
         <div class="flex items-center gap-3">
-          <a href="index.html" class="flex items-center gap-3 group">
-            <!-- <div class="w-10 h-10 bg-brand-800 rounded-lg flex items-center justify-center text-white"> -->
-            <!-- <i class="fa-solid fa-layer-group text-xl"></i> -->
-            <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" />
-            <!-- </div> -->
-            <!-- <div class="flex flex-col">
+          <!-- <div class="w-10 h-10 bg-brand-800 rounded-lg flex items-center justify-center text-white"> -->
+          <!-- <i class="fa-solid fa-layer-group text-xl"></i> -->
+          <a href="index.html"> <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" /></a>
+
+          <!-- </div> -->
+          <!-- <div class="flex flex-col">
             <span class="font-serif font-bold text-xl text-brand-900 leading-tight">ARCOS Group</span>
             <span class="text-xs text-gray-500 uppercase tracking-widest">Universidad Carlos III de Madrid</span>
           </div> -->
-          </a>
         </div>
         <div class="hidden md:flex items-center space-x-6 text-sm">
           <a href="index.html#about" class="text-gray-600 hover:text-brand-600 font-medium transition">About</a>
           <a href="index.html#research" class="text-gray-600 hover:text-brand-600 font-medium transition">Research</a>
           <a href="index.html#projects" class="text-gray-600 hover:text-brand-600 font-medium transition">Projects</a>
-          <a href="members.html" class="text-brand-600 font-bold transition">Members</a>
+          <a href="index.html#tools" class="text-gray-600 hover:text-brand-600 font-medium transition">Tools</a>
+          <a href="conferences.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Conferences</a>
           <a href="publications.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Publications</a>
+          <a href="members.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Members</a>
 
           <a href="/login"
             class="px-4 py-2 bg-brand-900 text-white rounded-md font-medium hover:bg-brand-800 transition shadow-sm">
@@ -69,32 +70,41 @@
     </div>
   </nav>
 
-  <header class="bg-white border-b border-gray-200">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+  <header class="bg-white border-b border-gray-200 pb-12">
+    <div class="max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8 text-center">
       <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
         Our People
       </h1>
-      <p class="max-w-2xl mx-auto text-lg text-gray-500 font-light">
+      <p class="max-w-2xl mx-auto text-lg text-gray-500 font-light mb-8">
         Meet the researchers, professors, and students driving innovation at ARCOS.
       </p>
+
+      <div class="max-w-md mx-auto relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+        </div>
+        <input type="text" id="searchInput"
+          class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-full leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 sm:text-sm shadow-sm transition"
+          placeholder="Search member by name..." autocomplete="off">
+      </div>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16" id="membersContainer">
 
-    <section>
+    <section class="member-section">
       <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
         Full Professors
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <div
-          class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
+          class="member-item bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
           <div
             class="w-20 h-20 mx-auto bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl font-bold mb-4 group-hover:bg-brand-600 group-hover:text-white transition">
             JC
           </div>
-          <h3 class="font-bold text-gray-900 text-lg mb-1">Jesús Carretero Pérez</h3>
+          <h3 class="font-bold text-gray-900 text-lg mb-1 member-name">Jesús Carretero Pérez</h3>
           <p class="text-xs text-gray-500 uppercase tracking-wide mb-4">Full Professor</p>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3791"
             target="_blank" class="text-sm text-brand-600 font-medium hover:underline">
@@ -103,12 +113,12 @@
         </div>
 
         <div
-          class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
+          class="member-item bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
           <div
             class="w-20 h-20 mx-auto bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl font-bold mb-4 group-hover:bg-brand-600 group-hover:text-white transition">
             FG
           </div>
-          <h3 class="font-bold text-gray-900 text-lg mb-1">Félix García Carballeira</h3>
+          <h3 class="font-bold text-gray-900 text-lg mb-1 member-name">Félix García Carballeira</h3>
           <p class="text-xs text-gray-500 uppercase tracking-wide mb-4">Full Professor</p>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3167"
             target="_blank" class="text-sm text-brand-600 font-medium hover:underline">
@@ -117,12 +127,12 @@
         </div>
 
         <div
-          class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
+          class="member-item bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
           <div
             class="w-20 h-20 mx-auto bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl font-bold mb-4 group-hover:bg-brand-600 group-hover:text-white transition">
             JG
           </div>
-          <h3 class="font-bold text-gray-900 text-lg mb-1">José Daniel García Sánchez</h3>
+          <h3 class="font-bold text-gray-900 text-lg mb-1 member-name">José Daniel García Sánchez</h3>
           <p class="text-xs text-gray-500 uppercase tracking-wide mb-4">Full Professor</p>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1204"
             target="_blank" class="text-sm text-brand-600 font-medium hover:underline">
@@ -131,12 +141,12 @@
         </div>
 
         <div
-          class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
+          class="member-item bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition text-center group">
           <div
             class="w-20 h-20 mx-auto bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-xl font-bold mb-4 group-hover:bg-brand-600 group-hover:text-white transition">
             FG
           </div>
-          <h3 class="font-bold text-gray-900 text-lg mb-1">Francisco Javier García Blas</h3>
+          <h3 class="font-bold text-gray-900 text-lg mb-1 member-name">Francisco Javier García Blas</h3>
           <p class="text-xs text-gray-500 uppercase tracking-wide mb-4">Full Professor</p>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1370"
             target="_blank" class="text-sm text-brand-600 font-medium hover:underline">
@@ -147,62 +157,68 @@
       </div>
     </section>
 
-    <section>
+    <section class="member-section">
       <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
         Associate Professors
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
-          <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4">
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
             AC
           </div>
           <div>
-            <h4 class="font-bold text-gray-900">Alejandro Calderón Mateos</h4>
+            <h4 class="font-bold text-gray-900 member-name">Alejandro Calderón Mateos</h4>
             <p class="text-sm text-gray-500">Associate Professor</p>
           </div>
         </div>
-        <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
-          <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4">
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
             DE
           </div>
           <div>
-            <h4 class="font-bold text-gray-900">David Expósito Singh</h4>
+            <h4 class="font-bold text-gray-900 member-name">David Expósito Singh</h4>
             <p class="text-sm text-gray-500">Associate Professor</p>
           </div>
         </div>
-        <div class="flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
-          <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4">
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
             JF
           </div>
           <div>
-            <h4 class="font-bold text-gray-900">Javier Fernández Muñoz</h4>
+            <h4 class="font-bold text-gray-900 member-name">Javier Fernández Muñoz</h4>
             <p class="text-sm text-gray-500">Associate Professor</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="member-section">
       <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
         Post-doctoral Researchers
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-5 rounded-lg border-l-4 border-brand-600 shadow-sm">
-          <h4 class="font-bold text-gray-900">Alberto Cascajo García</h4>
+        <div class="member-item bg-white p-5 rounded-lg border-l-4 border-brand-600 shadow-sm">
+          <h4 class="font-bold text-gray-900 member-name">Alberto Cascajo García</h4>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-20197"
             class="text-sm text-brand-600 hover:underline mt-1 inline-block">
             View Profile &rarr;
           </a>
         </div>
-        <div class="bg-white p-5 rounded-lg border-l-4 border-brand-600 shadow-sm">
-          <h4 class="font-bold text-gray-900">Dante Domizzi Sánchez Gallegos</h4>
+        <div class="member-item bg-white p-5 rounded-lg border-l-4 border-brand-600 shadow-sm">
+          <h4 class="font-bold text-gray-900 member-name">Dante Domizzi Sánchez Gallegos</h4>
           <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-289541"
             class="text-sm text-brand-600 hover:underline mt-1 inline-block">
             View Profile &rarr;
           </a>
         </div>
-        <div class="bg-white p-5 rounded-lg border-l-4 border-gray-300 shadow-sm">
-          <h4 class="font-bold text-gray-900">Elías Del Pozo Puñal</h4>
+        <div class="member-item bg-white p-5 rounded-lg border-l-4 border-gray-300 shadow-sm">
+          <h4 class="font-bold text-gray-900 member-name">Elías Del Pozo Puñal</h4>
           <span class="text-sm text-gray-500 mt-1 inline-block">Researcher</span>
         </div>
       </div>
@@ -210,45 +226,56 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-      <section class="lg:col-span-2">
+      <section class="lg:col-span-2 member-section">
         <h2 class="text-2xl font-serif font-bold text-brand-900 mb-6 border-b border-gray-200 pb-2">
           PhD Students
         </h2>
         <div class="bg-white rounded-lg border border-gray-100 shadow-sm overflow-hidden">
           <ul class="divide-y divide-gray-100">
-            <li class="p-4 hover:bg-gray-50 flex items-center">
-              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i> Diego Camarmas
+            <li class="member-item p-4 hover:bg-gray-50 flex items-center">
+              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i>
+              <span class="member-name">Diego Camarmas</span>
             </li>
-            <li class="p-4 hover:bg-gray-50 flex items-center">
-              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i> Diana Elisabeth Carrizales
+            <li class="member-item p-4 hover:bg-gray-50 flex items-center">
+              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i>
+              <span class="member-name">Diana Elisabeth Carrizales</span>
             </li>
-            <li class="p-4 hover:bg-gray-50 flex items-center">
-              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i> Genaro Juan Sánchez Gallegos
+            <li class="member-item p-4 hover:bg-gray-50 flex items-center">
+              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i>
+              <span class="member-name">Genaro Juan Sánchez Gallegos</span>
             </li>
-            <li class="p-4 hover:bg-gray-50 flex items-center">
-              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i> Catherine Alessandra Torres Charles
+            <li class="member-item p-4 hover:bg-gray-50 flex items-center">
+              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i>
+              <span class="member-name">Catherine Alessandra Torres Charles</span>
             </li>
-            <li class="p-4 hover:bg-gray-50 flex items-center">
-              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i> Cosmin Octavian Petre Carastoian
+            <li class="member-item p-4 hover:bg-gray-50 flex items-center">
+              <i class="fa-solid fa-user-graduate text-gray-400 mr-3"></i>
+              <span class="member-name">Cosmin Octavian Petre Carastoian</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <section>
+      <section class="member-section">
         <h2 class="text-2xl font-serif font-bold text-gray-700 mb-6 border-b border-gray-200 pb-2">
           Tech Manager
         </h2>
-        <div class="bg-gray-100 p-6 rounded-lg border border-gray-200">
+        <div class="member-item bg-gray-100 p-6 rounded-lg border border-gray-200">
           <div class="flex items-center gap-3 mb-2">
-            <div class="bg-gray-300 rounded-full w-10 h-10 flex items-center justify-center text-gray-600">
+            <div
+              class="bg-gray-300 rounded-full w-10 h-10 flex items-center justify-center text-gray-600 flex-shrink-0">
               <i class="fa-solid fa-wrench"></i>
             </div>
-            <h4 class="font-bold text-gray-900">Cosmin Octavian</h4>
+            <h4 class="font-bold text-gray-900 member-name">Cosmin Octavian</h4>
           </div>
           <p class="text-sm text-gray-600 ml-13">System Administrator & Lab Support</p>
         </div>
       </section>
+    </div>
+
+    <div id="noResults" class="hidden text-center py-12">
+      <i class="fa-solid fa-user-slash text-4xl text-gray-300 mb-3"></i>
+      <p class="text-gray-500">No hemos encontrado miembros con ese nombre.</p>
     </div>
 
   </main>
@@ -286,6 +313,53 @@
       &copy; 2025 ARCOS Research Group – UC3M.
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInput');
+      const memberItems = document.querySelectorAll('.member-item');
+      const sections = document.querySelectorAll('.member-section');
+      const noResultsMsg = document.getElementById('noResults');
+
+      searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        let hasVisibleMembers = false;
+
+        // 1. Filtrar cada miembro individualmente
+        memberItems.forEach(item => {
+          // Busca el elemento que contiene el nombre (usando la clase member-name que añadimos)
+          const nameElement = item.querySelector('.member-name');
+          // O si es un li directo, toma todo el texto
+          const textToSearch = nameElement ? nameElement.textContent : item.textContent;
+
+          if (textToSearch.toLowerCase().includes(searchTerm)) {
+            item.classList.remove('hidden');
+            hasVisibleMembers = true;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        // 2. Ocultar secciones vacías (Opcional, pero queda mejor)
+        sections.forEach(section => {
+          // Ver si hay items visibles dentro de esta sección
+          const visibleItemsInSection = section.querySelectorAll('.member-item:not(.hidden)');
+          if (visibleItemsInSection.length === 0) {
+            section.classList.add('hidden');
+          } else {
+            section.classList.remove('hidden');
+          }
+        });
+
+        // 3. Mostrar mensaje de "No resultados" si todo está oculto
+        if (!hasVisibleMembers) {
+          noResultsMsg.classList.remove('hidden');
+        } else {
+          noResultsMsg.classList.add('hidden');
+        }
+      });
+    });
+  </script>
 
 </body>
 
