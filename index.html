@@ -1,109 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARCOS Research Group – UC3M</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-</head>
-<body>
-  <header>
-    <a href="index.html">
-        <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:360px; margin-bottom:1rem;"/>
-    </a>
-  </header>
+<html lang="es">
 
-  <nav>
-    <div class="dropdown">
-      <a href="#about">About us ▼</a>
-      <div class="dropdown-content">
-        <a href="members.html">Members</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCOS Research Group | UC3M</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              600: '#004e92', // Azul corporativo UC3M
+              800: '#003366',
+              900: '#00264d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20">
+        <div class="flex items-center gap-3">
+          <!-- <div class="w-10 h-10 bg-brand-800 rounded-lg flex items-center justify-center text-white"> -->
+          <!-- <i class="fa-solid fa-layer-group text-xl"></i> -->
+          <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" />
+          <!-- </div> -->
+          <!-- <div class="flex flex-col">
+            <span class="font-serif font-bold text-xl text-brand-900 leading-tight">ARCOS Group</span>
+            <span class="text-xs text-gray-500 uppercase tracking-widest">Universidad Carlos III de Madrid</span>
+          </div> -->
+        </div>
+        <div class="hidden md:flex items-center space-x-6 text-sm">
+          <a href="#about" class="text-gray-600 hover:text-brand-600 font-medium transition">About</a>
+          <a href="#research" class="text-gray-600 hover:text-brand-600 font-medium transition">Research</a>
+          <a href="#projects" class="text-gray-600 hover:text-brand-600 font-medium transition">Projects</a>
+          <a href="#tools" class="text-gray-600 hover:text-brand-600 font-medium transition">Tools</a>
+          <a href="conferences.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Conferences</a>
+          <a href="publications.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Publications</a>
+
+          <a href="/login"
+            class="px-4 py-2 bg-brand-900 text-white rounded-md font-medium hover:bg-brand-800 transition shadow-sm">
+            <i class="fa-solid fa-lock mr-2"></i>Members Area
+          </a>
+        </div>
       </div>
     </div>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#tools">Tools</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="publications.html">Publications</a>
-    <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>The ARCOS Research Group focuses on computer architecture, operating systems, parallel and distributed computing, and performance analysis. We combine theoretical research with practical experimentation to design efficient, scalable, and reliable computing systems.</p>
+  <header id="about" class="bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        Computer Architecture, Operating Systems <br> & <span class="text-brand-600">Parallel Computing</span>
+      </h1>
+      <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-500 font-light leading-relaxed">
+        The ARCOS Research Group focuses on computer architecture, operating systems, parallel and distributed
+        computing, and performance analysis. We combine theoretical research with practical experimentation to design
+        efficient, scalable, and reliable computing systems.
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#projects"
+          class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-50 transition">
+          View Projects
+        </a>
+        <a href="members.html"
+          class="px-6 py-3 bg-brand-600 text-white font-medium rounded-md hover:bg-brand-700 transition shadow-md">
+          Meet the Team
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="research" class="py-12 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="font-serif text-2xl font-bold text-gray-900">Research Areas</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-solid fa-server"></i></div>
+          <span class="font-medium text-gray-700">High-Performance Systems</span>
+        </div>
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-solid fa-network-wired"></i></div>
+          <span class="font-medium text-gray-700">Parallel & Distributed Computing</span>
+        </div>
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-brands fa-linux"></i></div>
+          <span class="font-medium text-gray-700">OS & Virtualization</span>
+        </div>
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-solid fa-microchip"></i></div>
+          <span class="font-medium text-gray-700">Embedded & Real-Time Systems</span>
+        </div>
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-solid fa-gauge-high"></i></div>
+          <span class="font-medium text-gray-700">Performance Modeling</span>
+        </div>
+        <div class="flex items-start p-4 rounded-lg hover:bg-brand-50 transition">
+          <div class="text-brand-600 mt-1 mr-3"><i class="fa-solid fa-brain"></i></div>
+          <span class="font-medium text-gray-700">Machine Learning for Systems</span>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-10">
+        <div>
+          <h2 class="font-serif text-3xl font-bold text-gray-900">Research Projects</h2>
+          <p class="mt-2 text-gray-500">Funded by the EU, Spanish Government, and industry partners.</p>
+        </div>
+      </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <article
+          class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition flex flex-col h-full">
+          <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400">
+            <i class="fa-solid fa-database text-4xl"></i>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-bold text-xl text-gray-900 mb-2">SCIOT</h3>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              Nuevas técnicas escalables de E/S para cargas de trabajo híbridas de HPC e intensivas en datos.
+            </p>
+            <a href="https://researchportal.uc3m.es/display/act560656"
+              class="text-brand-600 text-sm font-semibold hover:underline mt-auto">More details &rarr;</a>
+          </div>
+        </article>
 
-  <section id="research" class="section">
-    <h2>Research Areas</h2>
-    <ul>
-      <li>Computer Architecture and High-Performance Systems</li>
-      <li>Parallel and Distributed Computing</li>
-      <li>Operating Systems and Virtualization</li>
-      <li>Embedded and Real-Time Systems</li>
-      <li>Performance Modeling and Optimization</li>
-      <li>Machine Learning for Systems</li>
-    </ul>
+        <article
+          class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition flex flex-col h-full">
+          <div class="h-40 bg-blue-50 flex items-center justify-center text-blue-300">
+            <i class="fa-solid fa-cloud text-4xl"></i>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <span
+              class="inline-block px-2 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full mb-3 w-fit">EuroHPC</span>
+            <h3 class="font-bold text-xl text-gray-900 mb-2">ADMIRE</h3>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              Adaptative Multi-tier Intelligent data manager for Exascale.
+            </p>
+            <a href="https://admire-eurohpc.eu"
+              class="text-brand-600 text-sm font-semibold hover:underline mt-auto">Visit Website &rarr;</a>
+          </div>
+        </article>
+
+        <article
+          class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition flex flex-col h-full">
+          <div class="h-40 bg-gray-200 flex items-center justify-center text-gray-400">
+            <i class="fa-solid fa-hard-drive text-4xl"></i>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-bold text-xl text-gray-900 mb-2">EXPAND</h3>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              High Performance Storage Systems for HPC and Big Data.
+            </p>
+            <a href="https://expand-arcos.github.io"
+              class="text-brand-600 text-sm font-semibold hover:underline mt-auto">More details &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="bg-white rounded-lg border border-gray-100 shadow-sm p-8">
+        <h3 class="font-serif text-xl font-bold text-gray-800 mb-6 pb-2 border-b border-gray-100">
+          Ongoing & Completed Projects
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371352502120/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">DECIDE</span>
+              <p class="text-sm text-gray-500">New Data Intensive Computing Methods for High-End and Edge Computing
+                Platforms</p>
+            </div>
+          </a>
+
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351551657/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">COVID-19 Forecast</span>
+              <p class="text-sm text-gray-500">Medium and long-term forecast of COVID-19 spread</p>
+            </div>
+          </a>
+
+          <a href="https://era4tb.org/" class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">ERA4TB</span>
+              <p class="text-sm text-gray-500">European Accelerator of Tuberculosis Regime</p>
+            </div>
+          </a>
+
+          <a href="https://cabahla.org/" class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">CABAHLA</span>
+              <p class="text-sm text-gray-500">Convergencia Big Data-HPC: de Los sensores a las Aplicaciones</p>
+            </div>
+          </a>
+
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351921394/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">DEEP CT</span>
+              <p class="text-sm text-gray-500">Tomographic reconstruction for low-dose x-ray systems using deep learning
+              </p>
+            </div>
+          </a>
+
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371352204036/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">eID4Spain</span>
+              <p class="text-sm text-gray-500">Connecting Regional and Local Administrations to Spanish eIDAS node</p>
+            </div>
+          </a>
+
+          <a href="https://www.aspide-project.eu/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">ASPIDE</span>
+              <p class="text-sm text-gray-500">Exascale programming models for extreme data processing</p>
+            </div>
+          </a>
+
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/es/TextoDosColumnas/1371351563042/"
+            class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">PredCov</span>
+              <p class="text-sm text-gray-500">Multi-source and multi-method prediction to support COVID-19 policy
+                decision making</p>
+            </div>
+          </a>
+
+          <a href="https://creatorsim.github.io" class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">CREATOR</span>
+              <p class="text-sm text-gray-500">Didactic and Generic Assembly Programming Simulator</p>
+            </div>
+          </a>
+
+          <a href="https://wepsim.github.io/" class="group flex items-start p-3 hover:bg-gray-50 rounded transition">
+            <div class="text-brand-600 mt-1 mr-3 flex-shrink-0"><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+              <span class="font-bold text-gray-800 group-hover:text-brand-600 transition">WepSIM</span>
+              <p class="text-sm text-gray-500">The Web Elemental Processor Simulator</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="mt-8 text-center pt-6 border-t border-gray-100">
+          <a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351744318/"
+            class="inline-flex items-center px-6 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition">
+            <i class="fa-solid fa-plus mr-2 text-gray-400"></i> View Project Archive
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>We participate in national and international research projects funded by the EU, the Spanish Government, and industry partners.</p>
-    <ul>
-      <li><a href="https://researchportal.uc3m.es/display/act560656">SCIOT - Nuevas técnicas escalables de E/S para cargas de trabajo híbridas de HPC e intensivas en datos</a></li>
-      <li><a href="https://admire-eurohpc.eu">ADMIRE: Adaptative Multi-tier Intelligent data manager for Exascale</a></li>
-      <li><a href="https://expand-arcos.github.io">EXPAND - High Performance Storage Sytems for HPC and Big Data</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371352502120/">DECIDE - New Data Intensive Computing Methods for High-End and Edge Computing Platforms</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351551657/">Medium and long-term forecast of COVID-19 spread</a></li>
-      <li><a href="https://era4tb.org/">ERA4TB - European Accelerator of Tuberculosis Regime</a></li>
-      <li><a href="https://cabahla.org/">CABAHLA - ConvergenciA Big dAta-Hpc: de Los sensores a las Aplicaciones</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351921394/">DEEP CT - Tomographic reconstruction for low-dose x-ray systems using deep learning</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371352204036/">eID4Spain - Connecting Regional and Local Administrations to Spanish eIDAS node</a></li>
-      <li><a href="https://www.aspide-project.eu/">ASPIDE - Exascale programIng models for extreme data processing</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/es/TextoDosColumnas/1371351563042/">PredCov - Multi-source and multi-method prediction to support COVID-19 policy decision making</a></li>
-      <li><a href="https://creatorsim.github.io">CREATOR - didaCtic and geneRic assEmbly progrAmming simulaTOR</a></li>
-      <li><a href="https://wepsim.github.io/">WepSIM - The Web Elemental Processor SIMulator</a></li>
-      <li><a href="https://www.uc3m.es/ss/Satellite/GruposInvestigacion/en/TextoDosColumnas/1371351744318/">... More information about our projects ...</a></li>
-    </ul>
+  <section id="tools" class="py-16 bg-white border-t border-gray-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-serif text-3xl font-bold text-gray-900 mb-8">Software & Tools</h2>
+
+      <div class="space-y-4">
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">LIMITLESS</h4>
+            <p class="text-sm text-gray-500">LIght-weight MonItoring Tool for LargE Scale distributed System</p>
+          </div>
+          <a href="https://github.com/acascajo/limitless-pub" target="_blank"
+            class="text-gray-400 hover:text-brand-600">
+            <i class="fa-brands fa-github text-xl"></i>
+          </a>
+        </div>
+
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">WepSIM</h4>
+            <p class="text-sm text-gray-500">The Web Elemental Processor SIMulator</p>
+          </div>
+          <a href="https://wepsim.github.io/" target="_blank" class="text-gray-400 hover:text-brand-600">
+            <i class="fa-solid fa-globe text-xl"></i>
+          </a>
+        </div>
+
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">XPn</h4>
+            <p class="text-sm text-gray-500">The Expand Parallel File System</p>
+          </div>
+          <a href="https://github.com/xpn-arcos/xpn" target="_blank" class="text-gray-400 hover:text-brand-600">
+            <i class="fa-brands fa-github text-xl"></i>
+          </a>
+        </div>
+
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">CREATOR</h4>
+            <p class="text-sm text-gray-500">Didactic and Generic Assembly Programming Simulator</p>
+          </div>
+          <a href="https://creatorsim.github.io/creator" target="_blank" class="text-gray-400 hover:text-brand-600">
+            <i class="fa-solid fa-globe text-xl"></i>
+          </a>
+        </div>
+
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">DynoStore</h4>
+            <p class="text-sm text-gray-500">DynoStore wide area storage system</p>
+          </div>
+          <a href="https://dynostore.github.io/dynostore/" target="_blank" class="text-gray-400 hover:text-brand-600">
+            <i class="fa-brands fa-github text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="tools" class="section">
-    <h2>Software and Tools</h2>
-    <ul>
-      <li><a href="https://github.com/xpn-arcos/xpn"> The Expand Parallel File System</a></li>
-      <li><a href="https://github.com/acascajo/limitless-pub">LIMITLESS - LIght-weight MonItoring Tool for LargE Scale distributed System</a></li>
-      <li><a href="https://wepsim.github.io/wepsim/ws_dist/wepsim-classic.html?mode=ep&examples_set=MIPS&example=11&simulator=assembly:screen#">WepSIM - The Web Elemental Processor SIMulator</a></li>
-      <li><a href="https://creatorsim.github.io/creator">CREATOR - didaCtic and geneRic assEmbly progrAmming simulaTOR</a></li>
-      <li><a href="https://github.com/arcosuc3m/clang-contracts">Experimental Clang support for contract based programming in C++ (P0542R5 TS)</a></li>
-      <li><a href="https://github.com/arcosuc3m/phardi">Parallel High Angular Resolution Diffusion Imaging</a></li>
-      <li><a href="https://github.com/arcosuc3m/ppat">PPAT - Parallel Pattern Analyzer Tool</a></li>
-      <li><a href="https://github.com/arcosuc3m/phardi">Parallel High Angular Resolution Diffusion Imaging</a></li>
-      <li><a href="https://dynostore.github.io/dynostore/">DynoStore wide area storage system </a></li>
-    </ul>
+  <section class="bg-brand-900 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-white">
+        <h3 class="text-2xl font-bold mb-2">Upcoming Conferences</h3>
+        <p class="text-brand-100">SBAC-PAD 2026 & Jornadas Sarteco 2026</p>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://coco-arcos.github.io/sbac-pad2026/"
+          class="px-5 py-2 bg-white text-brand-900 font-bold rounded shadow hover:bg-gray-100 transition">
+          SBAC-PAD Info
+        </a>
+        <a href="https://jornadassarteco.org"
+          class="px-5 py-2 border border-white text-white font-medium rounded hover:bg-brand-800 transition">
+          Jornadas Sarteco
+        </a>
+      </div>
+    </div>
   </section>
 
-    <section id="conferences" class="section">
-    <h2>Conferences and Events</h2>
-    <ul>
-      <li><a href="https://coco-arcos.github.io/sbac-pad2026/">SBAC-PAD - 38th IEEE/SBC Symposium on Computer Architecture and High Performance Computing</a> - <strong>CFP open!</strong></li>
-      <li><a href="https://jornadassarteco.org"> Jornadas Sarteco 2026</a> - <strong>CFP open!</strong></li>
-      <li><a href="conferences.html">See more ...</a></li>    
-  </section>
-
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><strong>ARCOS Research Group</strong><br>
-       Universidad Carlos III de Madrid<br>
-       Av. de la Universidad, 30, 28911 Leganés, Madrid, Spain<br>
-       Email:  jesus.carretero@uc3m.es - fgcarbal@inf.uc3m.es
-    </p>
-    <a href="members.html"><strong>Members</strong></a>
-  </section>
-
-  <footer>
-    &copy; 2025 ARCOS Research Group – UC3M
+  <footer id="contact" class="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h5 class="font-serif font-bold text-lg mb-4 text-white">ARCOS Research Group</h5>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Universidad Carlos III de Madrid<br>
+          Av. de la Universidad, 30<br>
+          28911 Leganés, Madrid, Spain
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Contact</h5>
+        <p class="text-gray-400 text-sm mb-2">
+          <i class="fa-solid fa-envelope mr-2"></i> jesus.carretero@uc3m.es
+        </p>
+        <p class="text-gray-400 text-sm">
+          <i class="fa-solid fa-envelope mr-2"></i> fgcarbal@inf.uc3m.es
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Links</h5>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li><a href="https://www.uc3m.es" class="hover:text-white transition">UC3M Home</a></li>
+          <li><a href="members.html" class="hover:text-white transition">Members</a></li>
+          <li><a href="/login" class="hover:text-brand-200 transition text-brand-400 font-semibold">Admin Panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+      &copy; 2025 ARCOS Research Group – UC3M.
+    </div>
   </footer>
+
 </body>
+
 </html>
