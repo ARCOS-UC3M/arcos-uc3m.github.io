@@ -42,21 +42,22 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20">
         <div class="flex items-center gap-3">
-          <a href="index.html"> <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" /></a>
+          <a href="index.html">
+            <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" />
+          </a>
         </div>
         <div class="hidden md:flex items-center space-x-6 text-sm">
           <a href="index.html#about" class="text-gray-600 hover:text-brand-600 font-medium transition">About</a>
           <a href="index.html#research" class="text-gray-600 hover:text-brand-600 font-medium transition">Research</a>
           <a href="index.html#projects" class="text-gray-600 hover:text-brand-600 font-medium transition">Projects</a>
-          <a href="index.html#tools" class="text-gray-600 hover:text-brand-600 font-medium transition">Tools</a>
+          <a href="members.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Members</a>
           <a href="conferences.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Conferences</a>
           <a href="publications.html" class="text-brand-600 font-bold transition">Publications</a>
-          <a href="members.html" class="text-gray-600 hover:text-brand-600 font-medium transition">Members</a>
 
-          <!-- <a href="/login"
+          <a href="/login"
             class="px-4 py-2 bg-brand-900 text-white rounded-md font-medium hover:bg-brand-800 transition shadow-sm">
             <i class="fa-solid fa-lock mr-2"></i>Members Area
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
@@ -77,64 +78,67 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-8">
-        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-4"><i class="fa-solid fa-filter mr-2"></i> Filter Publications</h3>
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-4"><i class="fa-solid fa-filter mr-2"></i>
+          Filter Publications</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            
-            <div class="relative">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-                    <i class="fa-solid fa-user"></i>
-                </span>
-                <input type="text" id="authorSearch" placeholder="Search by Author..." 
-                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm">
-            </div>
 
-            <div class="relative">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-                    <i class="fa-regular fa-calendar"></i>
-                </span>
-                <select id="yearFilter" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
-                    <option value="">All Years</option>
-                    <option value="2025">2025</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                </select>
-            </div>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" id="authorSearch" placeholder="Search by Author..."
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm">
+          </div>
 
-            <div class="relative">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-                    <i class="fa-solid fa-tag"></i>
-                </span>
-                <select id="typeFilter" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
-                    <option value="">All Types</option>
-                    <option value="journal">Journal</option>
-                    <option value="conference">Conference</option>
-                    <option value="workshop">Workshop</option>
-                </select>
-            </div>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-regular fa-calendar"></i>
+            </span>
+            <select id="yearFilter"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
+              <option value="">All Years</option>
+            </select>
+          </div>
+
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-solid fa-tag"></i>
+            </span>
+            <select id="typeFilter"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
+              <option value="">All Types</option>
+              <option value="journal">Journal</option>
+              <option value="conference">Conference</option>
+              <option value="workshop">Workshop</option>
+            </select>
+          </div>
         </div>
       </div>
 
       <div class="flex justify-between items-center mb-6">
-          <div class="text-sm text-gray-500">
-              Showing <span id="countDisplay" class="font-bold text-brand-600">0</span> publications
+        <div class="text-sm text-gray-500">
+          Showing <span id="countDisplay" class="font-bold text-brand-600">0</span> publications
+        </div>
+        <div class="flex gap-2 text-xs font-semibold uppercase tracking-wide text-gray-400 hidden sm:flex">
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-600 mr-2"></span> Journal (J)</div>
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-brand-600 mr-2"></span> Conference (C)
           </div>
-          <div class="flex gap-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
-            <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-600 mr-2"></span> Journal (J)</div>
-            <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-brand-600 mr-2"></span> Conference (C)</div>
-            <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-orange-500 mr-2"></span> Workshop (W)</div>
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-orange-500 mr-2"></span> Workshop (W)
           </div>
+        </div>
       </div>
-      
-      <div class="space-y-6" id="publicationsList"> </div>
-    
-      
+
+      <div class="space-y-6" id="publicationsList">
+      </div>
+
       <div id="noResults" class="hidden text-center py-12">
         <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
-            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+          <i class="fa-solid fa-magnifying-glass text-2xl"></i>
         </div>
-        <h3 class="text-lg font-medium text-gray-900">No matches found</h3>
-        <p class="text-gray-500">Try adjusting your filters or search terms.</p>
-        <button onclick="resetFilters()" class="mt-4 text-brand-600 hover:text-brand-800 font-medium text-sm">Clear all filters</button>
+        <h3 id="noResultsTitle" class="text-lg font-medium text-gray-900">No matches found</h3>
+        <p class="text-gray-500">Try selecting "All Years" to see the full archive.</p>
+        <button onclick="resetFilters()" class="mt-4 text-brand-600 hover:text-brand-800 font-medium text-sm">Clear all
+          filters</button>
       </div>
 
     </div>
@@ -176,73 +180,112 @@
 
   <script src="scripts/publications.js"></script>
 
-<script>
-  // Esta función la llama publications.js cuando termina de crear .pub-item
-  window.initPublicationFilters = function () {
-    const authorInput = document.getElementById('authorSearch');
-    const yearInput = document.getElementById('yearFilter');
-    const typeInput = document.getElementById('typeFilter');
-    const countDisplay = document.getElementById('countDisplay');
-    const noResults = document.getElementById('noResults');
+  <script>
+    // Esta función será llamada automáticamente por publications.js al terminar de pintar
+    window.initPublicationFilters = function () {
+      const authorInput = document.getElementById('authorSearch');
+      const yearInput = document.getElementById('yearFilter');
+      const typeInput = document.getElementById('typeFilter');
+      const publications = document.querySelectorAll('.pub-item');
+      const countDisplay = document.getElementById('countDisplay');
+      const noResults = document.getElementById('noResults');
+      const noResultsTitle = document.getElementById('noResultsTitle');
 
-    function getPublications() {
-      // Siempre cogemos la lista actual (por si en el futuro añades más dinámicamente)
-      return document.querySelectorAll('.pub-item');
-    }
+      // 1. Obtener AÑO ACTUAL del sistema
+      const currentSystemYear = new Date().getFullYear().toString();
 
-    function filterPublications() {
-      const publications = getPublications();
-      const authorQuery = authorInput.value.toLowerCase();
-      const yearQuery = yearInput.value;
-      const typeQuery = typeInput.value;
-      let visibleCount = 0;
+      // 2. Poblar Dropdown
+      const availableYears = Array.from(publications)
+        .map(pub => pub.getAttribute('data-year'))
+        .filter((value, index, self) => self.indexOf(value) === index) // Únicos
+        .sort().reverse(); // Descendente
 
-      publications.forEach(pub => {
-        const authors = (pub.getAttribute('data-authors') || '').toLowerCase();
-        const year = pub.getAttribute('data-year');
-        const type = pub.getAttribute('data-type');
+      // Aseguramos que el año actual aparezca en la lista aunque no tenga papers aún
+      if (!availableYears.includes(currentSystemYear)) {
+        availableYears.unshift(currentSystemYear);
+      }
 
-        const matchAuthor = authors.includes(authorQuery);
-        const matchYear = yearQuery === "" || year === yearQuery;
-        const matchType = typeQuery === "" || type === typeQuery;
-
-        if (matchAuthor && matchYear && matchType) {
-          pub.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          pub.classList.add('hidden');
+      yearInput.innerHTML = '<option value="">All Years</option>';
+      availableYears.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        // Marcamos visualmente el año actual
+        if (year === currentSystemYear) {
+          option.textContent += " (Current)";
         }
+        yearInput.appendChild(option);
       });
 
-      countDisplay.textContent = visibleCount;
+      // 3. SELECCIONAR AÑO ACTUAL POR DEFECTO
+      yearInput.value = currentSystemYear;
 
-      if (visibleCount === 0) {
-        noResults.classList.remove('hidden');
-      } else {
-        noResults.classList.add('hidden');
+      // 4. Función de Filtrado
+      function filterPublications() {
+        const authorQuery = authorInput.value.toLowerCase();
+        const yearQuery = yearInput.value;
+        const typeQuery = typeInput.value;
+        let visibleCount = 0;
+
+        publications.forEach(pub => {
+          const authors = (pub.getAttribute('data-authors') || '').toLowerCase();
+          const year = pub.getAttribute('data-year');
+          const type = pub.getAttribute('data-type');
+
+          const matchAuthor = authors.includes(authorQuery);
+          const matchYear = yearQuery === "" || year === yearQuery;
+          const matchType = typeQuery === "" || type === typeQuery;
+
+          if (matchAuthor && matchYear && matchType) {
+            pub.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            pub.classList.add('hidden');
+          }
+        });
+
+        countDisplay.textContent = visibleCount;
+
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          // Mensaje personalizado para ayudar al usuario
+          if (yearQuery === currentSystemYear) {
+            noResultsTitle.textContent = `No publications found for ${yearQuery} yet`;
+          } else if (yearQuery) {
+            noResultsTitle.textContent = `No matches found for ${yearQuery}`;
+          } else {
+            noResultsTitle.textContent = "No matches found";
+          }
+        } else {
+          noResults.classList.add('hidden');
+        }
       }
-    }
 
-    function updateCount() {
-      countDisplay.textContent = getPublications().length;
-    }
+      // Listeners
+      authorInput.addEventListener('input', filterPublications);
+      yearInput.addEventListener('change', filterPublications);
+      typeInput.addEventListener('change', filterPublications);
 
-    // Inicializar contador y mostrar todo
-    updateCount();
-    filterPublications();
+      // Reset
+      window.resetFilters = function () {
+        authorInput.value = "";
+        yearInput.value = ""; // Al resetear, volvemos a "Ver todos"
+        typeInput.value = "";
+        filterPublications();
+      };
 
-    authorInput.addEventListener('input', filterPublications);
-    yearInput.addEventListener('change', filterPublications);
-    typeInput.addEventListener('change', filterPublications);
-
-    window.resetFilters = function () {
-      authorInput.value = "";
-      yearInput.value = "";
-      typeInput.value = "";
+      // Ejecutar filtro inicial
       filterPublications();
     };
-  };
-</script>
+
+    // Iniciador
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof loadPublications === 'function') {
+        loadPublications();
+      }
+    });
+  </script>
 
 </body>
+
 </html>
