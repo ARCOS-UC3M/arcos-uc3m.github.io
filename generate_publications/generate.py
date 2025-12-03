@@ -69,6 +69,7 @@ def latex_to_unicode(text: str) -> str:
 
     # Remove leftover braces
     text = text.replace("{", "").replace("}", "")
+    text = text.replace("\\", "")  # remove any remaining backslashes
     return text
 
 
@@ -92,7 +93,8 @@ def clean_braces(text: str) -> str:
     if text.startswith("{") and text.endswith("}"):
         text = text[1:-1].strip()
     text = re.sub(r"\s+", " ", text)
-    text = latex_to_unicode(text)   # ← nuevo
+    text = latex_to_unicode(text) 
+    
     return text
 
 
