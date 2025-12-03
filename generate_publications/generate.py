@@ -37,6 +37,41 @@ TYPE_MAP = {
 }
 
 
+LATEX_ACCENTS = {
+    r"\'a": "á", r"\'e": "é", r"\'i": "í", r"\'o": "ó", r"\'u": "ú",
+    r"\'A": "Á", r"\'E": "É", r"\'I": "Í", r"\'O": "Ó", r"\'U": "Ú",
+
+    r"\`a": "à", r"\`e": "è", r"\`i": "ì", r"\`o": "ò", r"\`u": "ù",
+    r"\`A": "À", r"\`E": "È", r"\`I": "Ì", r"\`O": "Ò", r"\`U": "Ù",
+
+    r"\^a": "â", r"\^e": "ê", r"\^i": "î", r"\^o": "ô", r"\^u": "û",
+    r"\^A": "Â", r"\^E": "Ê", r"\^I": "Î", r"\^O": "Ô", r"\^U": "Û",
+
+    r"\"a": "ä", r"\"e": "ë", r"\"i": "ï", r"\"o": "ö", r"\"u": "ü",
+    r"\"A": "Ä", r"\"E": "Ë", r"\"I": "Ï", r"\"O": "Ö", r"\"U": "Ü",
+
+    r"\~n": "ñ", r"\~N": "Ñ",
+
+    r"\c c": "ç", r"\c C": "Ç",
+}
+
+def latex_to_unicode(text: str) -> str:
+    if not text:
+        return text
+
+    # Remove enclosing braces around accents: {\'a} → \'a
+    text = re.sub(r"\{\\([\'`\^\"~]..?)\}", r"\\\1", text)
+    text = re.sub(r"\{\\([c] [cC])\}", r"\\\1", text)
+
+    # Apply replacements
+    for latex, uni in LATEX_ACCENTS.items():
+        text = text.replace(latex, uni)
+
+    # Remove leftover braces
+    text = text.replace("{", "").replace("}", "")
+    return text
+
+
 def map_entry_type(entry_type: str) -> Tuple[str, str]:
     """Map BibTeX entry type to (type, badge) for JSON."""
     et = (entry_type or "").lower()
@@ -51,15 +86,13 @@ def map_entry_type(entry_type: str) -> Tuple[str, str]:
 # ---------- String cleaning ----------
 
 def clean_braces(text: str) -> str:
-    """Remove outer braces and collapse whitespace."""
     if not text:
         return ""
-    # Remove outermost braces if the whole string is wrapped
     text = text.strip()
     if text.startswith("{") and text.endswith("}"):
         text = text[1:-1].strip()
-    # Collapse multiple spaces/newlines
     text = re.sub(r"\s+", " ", text)
+    text = latex_to_unicode(text)   # ← nuevo
     return text
 
 
@@ -139,7 +172,8 @@ def build_venue(entry: Dict[str, Any]) -> str:
         or fields.get("howpublished")
         or ""
     )
-    venue_main = clean_braces(venue_main)
+    venue_main = latex_to_unicode(clean_braces(venue_main))
+
 
     pieces = []
 
@@ -166,7 +200,8 @@ def build_venue(entry: Dict[str, Any]) -> str:
     # Publisher or organization (optional)
     publisher = fields.get("publisher") or fields.get("organization")
     if publisher:
-        pieces.append(clean_braces(publisher))
+        pieces.append(clean_braces(latex_to_unicode(publisher)))
+
 
     # Join with comma and add trailing dot
     if not pieces:
@@ -204,8 +239,9 @@ def normalize_entry(entry: Dict[str, Any]) -> Dict[str, Any]:
         year = None
 
     title = clean_braces(entry.get("title", ""))
-    authors_display, authors_data = parse_authors(entry.get("author", ""))
-
+    authors_display, authors_data = parse_authors(
+        latex_to_unicode(entry.get("author", ""))
+    )
     venue = build_venue(entry)
 
     return {
