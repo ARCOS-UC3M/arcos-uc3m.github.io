@@ -3,7 +3,7 @@ name: Update publications JSON
 on:
   push:
     paths:
-      - 'bibs/**'        # run only when something in bibs/ changes
+      - 'generate_publications/bibs/**'        # run only when something in bibs/ changes
   workflow_dispatch:      # allow manual runs from the Actions tab
 
 jobs:
