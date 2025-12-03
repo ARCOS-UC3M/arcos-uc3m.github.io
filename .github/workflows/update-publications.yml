@@ -27,14 +27,14 @@ jobs:
       - name: Generate JSON from BibTeX
         run: |
           python generate_publications/generate.py generate_publications/bibs \
-            -o testpublications.json \
+            -o publications.json \
             -d testduplicates.json
       - name: Commit and push updated JSON to same branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add testpublications.json testduplicates.json
+          git add publications.json testduplicates.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
