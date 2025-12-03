@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate JSON from BibTeX
         run: |
-          python generate_publications/generate.py bibs \
+          python generate_publications/generate.py generate_publications/bibs \
             -o testpublications.json \
             -d testduplicates.json
       - name: Commit and push updated JSON to same branch
