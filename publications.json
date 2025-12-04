@@ -18,6 +18,33 @@
     "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
   },
   {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
+    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
+    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
+    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
+    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
+    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
+    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
+    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
+    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
+  },
+  {
     "year": 2022,
     "type": "journal",
     "badge": "Jour",
