@@ -1,0 +1,27 @@
+@inproceedings{garcia2023hercules,
+  title={Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications},
+  author={Garcia-Blas, Javier and Sanchez-Gallegos, Genaro and Petre, Cosmin and Martinelli, Alberto Riccardo and Aldinucci, Marco and Carretero, Jesus},
+  booktitle={European Conference on Parallel Processing},
+  pages={679--693},
+  year={2023},
+  organization={Springer}
+}
+
+@inproceedings{sanchez2023malleable,
+  title={Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications},
+  author={Sanchez-Gallegos, Genaro and Garcia-Blas, Javier and Carretero, Jesus and Petre, ID Cosmin},
+  booktitle={High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers},
+  volume={13999},
+  pages={56},
+  year={2023},
+  organization={Springer Nature}
+}
+
+@article{al2025comparative,
+  title={A comparative study of ad-hoc file systems for extreme scale computing},
+  author={Al-Maaitah, Njoud O and Garcia-Blas, Javier and Sanchez-Gallegos, Genaro and Carretero, Jesus and Vef, Marc-Andr{\'e} and Brinkmann, Andr{\'e}},
+  journal={Future Generation Computer Systems},
+  pages={107815},
+  year={2025},
+  publisher={Elsevier}
+}
