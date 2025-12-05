@@ -279,6 +279,15 @@
     "venue": "The Journal of Supercomputing, vol. 81(16), pp. 1–42, Springer."
   },
   {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
+    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
+    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
+    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
+  },
+  {
     "year": 2019,
     "type": "conference",
     "badge": "Conf",
