@@ -1,3 +1,7 @@
 old.html
 generate_publications/publications.json
 generate_publications/duplicates.json
+# Archivos identifier
+*.Identifier
+# Archivos de log
+*.log
