@@ -1,249 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARCOS Research Group – UC3M</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/publications.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | ARCOS Research Group</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              600: '#004e92', // Azul corporativo UC3M
+              800: '#003366',
+              900: '#00264d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="scripts/components.js"></script>
 
 </head>
 
-<body>
-  <header>
-    <a href="index.html">
-      <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:360px; margin-bottom:1rem;" />
-    </a>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <div id="navbar-container"></div>
+
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Scientific Publications
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-500 font-light">
+        Archive of conference papers, journal articles, and technical reports produced by the ARCOS Research Group.
+      </p>
+    </div>
   </header>
 
-  <nav>
-    <div class="dropdown">
-      <a href="index.html#about">About us ▼</a>
-      <div class="dropdown-content">
-        <a href="members.html">Members</a>
+  <main class="py-12 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-8">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-4"><i class="fa-solid fa-filter mr-2"></i>
+          Filter Publications</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" id="authorSearch" placeholder="Search by Author..."
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm">
+          </div>
+
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-regular fa-calendar"></i>
+            </span>
+            <select id="yearFilter"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
+              <option value="">All Years</option>
+            </select>
+          </div>
+
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <i class="fa-solid fa-tag"></i>
+            </span>
+            <select id="typeFilter"
+              class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-brand-600 focus:border-brand-600 text-sm bg-white">
+              <option value="">All Types</option>
+              <option value="journal">Journal</option>
+              <option value="conference">Conference</option>
+              <option value="workshop">Workshop</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center mb-6">
+        <div class="text-sm text-gray-500">
+          Showing <span id="countDisplay" class="font-bold text-brand-600">0</span> publications
+        </div>
+        <div class="flex gap-2 text-xs font-semibold uppercase tracking-wide text-gray-400 hidden sm:flex">
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-600 mr-2"></span> Journal (J)</div>
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-brand-600 mr-2"></span> Conference (C)
+          </div>
+          <div class="flex items-center"><span class="w-2 h-2 rounded-full bg-orange-500 mr-2"></span> Workshop (W)
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6" id="publicationsList">
+      </div>
+
+      <div id="noResults" class="hidden text-center py-12">
+        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+          <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        </div>
+        <h3 id="noResultsTitle" class="text-lg font-medium text-gray-900">No matches found</h3>
+        <p class="text-gray-500">Try selecting "All Years" to see the full archive.</p>
+        <button onclick="resetFilters()" class="mt-4 text-brand-600 hover:text-brand-800 font-medium text-sm">Clear all
+          filters</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="contact" class="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h5 class="font-serif font-bold text-lg mb-4 text-white">ARCOS Research Group</h5>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Universidad Carlos III de Madrid<br>
+          Av. de la Universidad, 30<br>
+          28911 Leganés, Madrid, Spain
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Contact</h5>
+        <p class="text-gray-400 text-sm mb-2">
+          <i class="fa-solid fa-envelope mr-2"></i> jesus.carretero@uc3m.es
+        </p>
+        <p class="text-gray-400 text-sm">
+          <i class="fa-solid fa-envelope mr-2"></i> fgcarbal@inf.uc3m.es
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Links</h5>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li><a href="https://www.uc3m.es" class="hover:text-white transition">UC3M Home</a></li>
+          <li><a href="members.html" class="hover:text-white transition">Members</a></li>
+          <li><a href="/login" class="hover:text-brand-200 transition text-brand-400 font-semibold">Admin Panel</a></li>
+        </ul>
       </div>
     </div>
-    <a href="index.html#research">Research</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#tools">Tools</a>
-    <a href="index.html#conferences">Conferences</a>
-    <a href="publications.html">Publications</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-
-  <h1>ARCOS Group Publications</h1>
-
-  <section id="research" class="section">
-    <main class="pub-list">
-      <!-- Publication 1 -->
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · C</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            Xook-Flow: an abstract communication channel model for the data exchange in computing continuum
-          </h3>
-          <div class="pub-authors">
-            Torres Charles, C. A., Sanchez-Gallegos, D. D, Carrizales-Espinoza, D., Carretero, J., &amp;
-            Gonzalez-Compean, J. L (2025). Xook-Flow: an abstract communication channel model for the data exchange in
-            computing continuum. Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing pp. 243--244.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · C</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            D-Rex: Heterogeneity-Aware Reliability Framework and Adaptive Algorithms for Distributed Storage
-          </h3>
-          <div class="pub-authors">
-            Gonthier, M., Sanchez-Gallegos, D. D, Pan, H., Nicolae, B., Zhou, S., Nguyen, H. D., Hayot-Sasson, V.,
-            Pauloski, G., Carretero, J., Chard, K., &amp; others (2025). D-Rex: Heterogeneity-Aware Reliability
-            Framework and Adaptive Algorithms for Distributed Storage. Proceedings of the 39th ACM International
-            Conference on Supercomputing pp. 853--867.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · C</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            DynoStore: A wide-area distribution system for the management of data over heterogeneous storage
-          </h3>
-          <div class="pub-authors">
-            Sanchez-Gallegos, D. D, Gonzalez-Compean, J., Gonthier, M., Hayot-Sasson, V., Pauloski, J G., Pan, H.,
-            Chard, K., Carretero, J., &amp; Foster, I. (2025). DynoStore: A wide-area distribution system for the
-            management of data over heterogeneous storage. 2025 IEEE 25th International Symposium on Cluster, Cloud and
-            Internet Computing (CCGrid) pp. 83--92.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · J</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            OrbiFaaS: An orbital method to build Continuum Earth Observation Systems
-          </h3>
-          <div class="pub-authors">
-            Torres-Charles, C., Sanchez-Gallegos, D. D, Carrizales-Espinoza, D., Gonzalez-Compean, J. L., &amp;
-            Carretero, J. (2025). OrbiFaaS: An orbital method to build Continuum Earth Observation Systems. Future
-            Generation Computer Systems pp. 107992.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · J</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA Torres-Charles
-            et al.
-          </h3>
-          <div class="pub-authors">
-            Torres-Charles, C. A, Sanchez-Gallegos, D. D, Gonzalez-Compean, J., Morales-Sandoval, M., &amp; Carretero,
-            J. (2025). Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA
-            Torres-Charles et al.. Cluster Computing 28(14) pp. 889.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · J</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            Nez: A design-driven skeleton model for building continuum AI-based and analytic systems
-          </h3>
-          <div class="pub-authors">
-            Sanchez-Gallegos, D. D, Carrizales-Espinoza, D., Gonzalez-Compean, J., N{\&#x27;u}{\~n}ez-Gaona, M. A.,
-            Aguirre-Meneses, H., &amp; Carretero, J. (2025). Nez: A design-driven skeleton model for building continuum
-            AI-based and analytic systems. Information and Software Technology pp. 107911.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · J</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            Smart Cities: A Systematic Review of Emerging Technologies
-          </h3>
-          <div class="pub-authors">
-            Sanchez-Gallegos, D. D, Carrizales-Espinoza, D. E, Torres-Charles, C., &amp; Carretero, J. (2025). Smart
-            Cities: A Systematic Review of Emerging Technologies. Smart Cities.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2025 · W</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            DAGonStore: Reliable Data Management for Workflows on the Computing Continuum with DynoStore and DAGonStar
-          </h3>
-          <div class="pub-authors">
-            Sanchez-Gallegos, D. D, Gonzalez-Compean, J., Carretero, J., &amp; Montella, R. (2025). DAGonStore: Reliable
-            Data Management for Workflows on the Computing Continuum with DynoStore and DAGonStar. Proceedings of the
-            SC&#x27;25 Workshops of the International Conference for High Performance Computing, Networking, Storage and
-            Analysis pp. 2213--2224.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2024 · J</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            StructMesh: A storage framework for serverless computing continuum
-          </h3>
-          <div class="pub-authors">
-            Carrizales-Espinoza, D., Sanchez-Gallegos, D. D, Gonzalez-Compean, J., &amp; Carretero, J. (2024).
-            StructMesh: A storage framework for serverless computing continuum. Future Generation Computer Systems 159
-            pp. 353--369.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2024 · C</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            GeoNimbus: A serverless framework to build earth observation and environmental services
-          </h3>
-          <div class="pub-authors">
-            S{\&#x27;a}nchez-Gallegos, D. D, Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C.,
-            Gonzalez-Compean, J., &amp; Carretero, J. (2024). GeoNimbus: A serverless framework to build earth
-            observation and environmental services. European Conference on Parallel Processing pp. 166--177.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-item">
-        <span class="pub-year-pill">2024 · C</span>
-        <div class="pub-main">
-          <h3 class="pub-title-text">
-            On the Building of Computing Continuum Systems Using Serverless Abstractions
-          </h3>
-          <div class="pub-authors">
-            S{\&#x27;a}nchez-Gallegos, D. D &amp; Carretero, J. (2024). On the Building of Computing Continuum Systems
-            Using Serverless Abstractions. European Conference on Parallel Processing pp. 385--390.
-          </div>
-          <div class="pub-meta-row">
-            <!-- no badges -->
-            <!-- no link -->
-          </div>
-        </div>
-      </article>
-
-      <!-- Add more .pub-item blocks here -->
-    </main>
-  </section>
-
-  <footer>
-    &copy; 2025 ARCOS Research Group – UC3M
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+      &copy; 2025 ARCOS Research Group – UC3M.
+    </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scripts/publications.js"></script>
+
+  <script>
+    // Esta función será llamada automáticamente por publications.js al terminar de pintar
+    window.initPublicationFilters = function () {
+      const authorInput = document.getElementById('authorSearch');
+      const yearInput = document.getElementById('yearFilter');
+      const typeInput = document.getElementById('typeFilter');
+      const publications = document.querySelectorAll('.pub-item');
+      const countDisplay = document.getElementById('countDisplay');
+      const noResults = document.getElementById('noResults');
+      const noResultsTitle = document.getElementById('noResultsTitle');
+
+      // 1. Obtener AÑO ACTUAL del sistema
+      const currentSystemYear = new Date().getFullYear().toString();
+
+      // 2. Poblar Dropdown
+      const availableYears = Array.from(publications)
+        .map(pub => pub.getAttribute('data-year'))
+        .filter((value, index, self) => self.indexOf(value) === index) // Únicos
+        .sort().reverse(); // Descendente
+
+      // Aseguramos que el año actual aparezca en la lista aunque no tenga papers aún
+      if (!availableYears.includes(currentSystemYear)) {
+        availableYears.unshift(currentSystemYear);
+      }
+
+      yearInput.innerHTML = '<option value="">All Years</option>';
+      availableYears.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        // Marcamos visualmente el año actual
+        if (year === currentSystemYear) {
+          option.textContent += " (Current)";
+        }
+        yearInput.appendChild(option);
+      });
+
+      // 3. SELECCIONAR AÑO ACTUAL POR DEFECTO
+      yearInput.value = currentSystemYear;
+
+      // 4. Función de Filtrado
+      function filterPublications() {
+        const authorQuery = authorInput.value.toLowerCase();
+        const yearQuery = yearInput.value;
+        const typeQuery = typeInput.value;
+        let visibleCount = 0;
+
+        publications.forEach(pub => {
+          const authors = (pub.getAttribute('data-authors') || '').toLowerCase();
+          const year = pub.getAttribute('data-year');
+          const type = pub.getAttribute('data-type');
+
+          const matchAuthor = authors.includes(authorQuery);
+          const matchYear = yearQuery === "" || year === yearQuery;
+          const matchType = typeQuery === "" || type === typeQuery;
+
+          if (matchAuthor && matchYear && matchType) {
+            pub.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            pub.classList.add('hidden');
+          }
+        });
+
+        countDisplay.textContent = visibleCount;
+
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          // Mensaje personalizado para ayudar al usuario
+          if (yearQuery === currentSystemYear) {
+            noResultsTitle.textContent = `No publications found for ${yearQuery} yet`;
+          } else if (yearQuery) {
+            noResultsTitle.textContent = `No matches found for ${yearQuery}`;
+          } else {
+            noResultsTitle.textContent = "No matches found";
+          }
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+
+      // Listeners
+      authorInput.addEventListener('input', filterPublications);
+      yearInput.addEventListener('change', filterPublications);
+      typeInput.addEventListener('change', filterPublications);
+
+      // Reset
+      window.resetFilters = function () {
+        authorInput.value = "";
+        yearInput.value = ""; // Al resetear, volvemos a "Ver todos"
+        typeInput.value = "";
+        filterPublications();
+      };
+
+      // Ejecutar filtro inicial
+      filterPublications();
+    };
+
+    // Iniciador
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof loadPublications === 'function') {
+        loadPublications();
+      }
+    });
+  </script>
+
+  <div id="footer-container"></div>
+
+
 </body>
 
 </html>

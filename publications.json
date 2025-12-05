@@ -1,0 +1,596 @@
+[
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
+    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Carretero",
+    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
+    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
+    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
+    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
+    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
+    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
+    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
+    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
+    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "On the continuous contract verification using blockchain and real-time data",
+    "authorsDisplay": "Martinez-Rendon, C., Camarmas-Alonso, D., Carretero, J., & Gonzalez-Compean, J. L.",
+    "authorsData": "Martinez-Rendon, Camarmas-Alonso, Carretero, Gonzalez-Compean",
+    "venue": "Cluster Computing, vol. 25(3), pp. 2179–2201, Springer US New York."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "CREATOR: Simulador didáctico y genérico para la programación en ensamblador",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Del-Pozo-Punal, E., & Mateos, A. C.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Del-Pozo-Punal, Mateos",
+    "venue": "XXXI Jornadas de Paralelismo (JP20/21)."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A new generic simulator for the teaching of assembly programming",
+    "authorsDisplay": "Camarmas-Alonso, D., Garc'ia-Carballeira, F., Del-Pozo-Puñal, E., & Mateos, A. C.",
+    "authorsData": "Camarmas-Alonso, Garc'ia-Carballeira, Del-Pozo-Puñal, Mateos",
+    "venue": "2021 XLVII Latin American Computing Conference (CLEI), pp. 1–9, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A scalable simulator for cloud, fog and edge computing platforms with mobility support",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garc'ia-Carballeira, F., & Camarmas-Alonso, D.",
+    "authorsData": "Del-Pozo-Puñal, Garc'ia-Carballeira, Camarmas-Alonso",
+    "venue": "Future Generation Computer Systems, vol. 144, pp. 117–130, North-Holland."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A new Ad-Hoc parallel file system for HPC environments based on the Expand parallel file system",
+    "authorsDisplay": "Garcia-Carballeira, F., Camarmas-Alonso, D., Caderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Garcia-Carballeira, Camarmas-Alonso, Caderon-Mateos, Carretero",
+    "venue": "2023 22nd International Symposium on Parallel and Distributed Computing (ISPDC), pp. 69–76, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación de rendimiento del sistema de ficheros paralelo Expand Ad-Hoc en MareNostrum 4",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Carretero",
+    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Integración del simulador CREATOR con hardware RISC-V: caso de estudio con microcontrolador ESP32",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Del-Pozo-Punal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Del-Pozo-Punal",
+    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Mateos, A. C., & Pérez, J. C.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Mateos, Pérez",
+    "venue": "XXXII Jornadas de Paralelismo (JP22)."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de Ficheros Distribuido para IoT basado en Expand",
+    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
+    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
+    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Una propuesta para el uso de dispositivos móviles en SimGrid: Aplicación a las simulaciones de IoT",
+    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., & Camarmas-Alonso, D.",
+    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso",
+    "venue": "XXXII Jornadas de Paralelismo (JP22)."
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "CREATOR: An Educational Integrated Development Environment for RISC-V Programming",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & del-Pozo-Puñal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, del-Pozo-Puñal",
+    "venue": "IEEE Access, vol. 12, pp. 127702–127717, IEEE."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Servicio de laboratorio remoto para la integración del simulador CREATOR con hardware RISC-V",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Del-Pozo-Punal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Del-Pozo-Punal",
+    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación del rendimiento de un sistema de ficheros para sistemas IoT",
+    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
+    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
+    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Tolerancia a fallos en el sistema de ficheros paralelo Expand Ad-Hoc",
+    "authorsDisplay": "Munoz-Munoz, D., Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Carretero, J.",
+    "authorsData": "Munoz-Munoz, Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Carretero",
+    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Fault Tolerant in the Expand Ad-Hoc Parallel File System",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 62–76, Springer."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Hierarchical and distributed data storage for computing continuum",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "Future Generation Computer Systems, vol. 174, pp. 107931, North-Holland."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Malleability in the Expand Ad-Hoc Parallel File System",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 322–333, Springer Nature Switzerland Cham."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "LFI: una libreria de comunicaciones tolerante a fallos para redes de alto rendimiento",
+    "authorsDisplay": "Munoz-Munoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
+    "authorsData": "Munoz-Munoz, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de almacenamiento para computing continuum: aplicación a sistemas de información ferroviaria",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garc'ia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
+    "authorsData": "Del-Pozo-Puñal, Garc'ia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Optimización de entornos de Big Data Analytics mediante sistemas de ficheros paralelos Ad-hoc",
+    "authorsDisplay": "Sotodosos-Morales, G., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderón-Mateos, A., Munoz-Munoz, D., & Carretero, J.",
+    "authorsData": "Sotodosos-Morales, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos, Munoz-Munoz, Carretero",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Simulador web para RISC-V basado en la especificación SAIL",
+    "authorsDisplay": "Cano-Resa, J. C., Garc'ia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
+    "authorsData": "Cano-Resa, Garc'ia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Extensión del simulador CREATOR para integrar funcionalidades de Arduino: caso de estudio con el microcontrolador ESP32",
+    "authorsDisplay": "Utrilla-Arroyo, E., Camarmas-Alonso, D., Garc'ia-Carballeira, F., & Calderón-Mateos, A.",
+    "authorsData": "Utrilla-Arroyo, Camarmas-Alonso, Garc'ia-Carballeira, Calderón-Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación del sistema de ficheros Expand Ad-Hoc con aplicaciones de uso intensivo de datos",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., Munoz-Munoz, D., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Munoz-Munoz, Carretero",
+    "venue": "XXXV Jornadas de Paralelismo (JP25)."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Malleability and fault tolerance in ad-hoc parallel file systems",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "Cluster Computing, vol. 28(13), pp. 860, Springer."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "ENIGMA: A Scalable Simulator for IoT and Edge Computing",
+    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., & Camarmas-Alonso, D.",
+    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso",
+    "venue": "31st Euromicro International Conference on Parallel, Distributed, and Network-Based Processing."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Improving I/O performance in HPC environments using the Expand Ad-Hoc file system",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Carretero",
+    "venue": "The Journal of Supercomputing, vol. 81(16), pp. 1–42, Springer."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
+    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
+    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
+    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
+  },
+  {
+    "year": 2019,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A data preparation approach for cloud storage based on containerized parallel patterns",
+    "authorsDisplay": "Carrizales, D., Sánchez-Gallegos, D. D., Reyes, H., González-Compeán, J., Morales-Sandoval, M., Carretero, J., & Galaviz-Mosqueda, A.",
+    "authorsData": "Carrizales, Sánchez-Gallegos, Reyes, González-Compeán, Morales-Sandoval, Carretero, Galaviz-Mosqueda",
+    "venue": "International Conference on Internet and Distributed Computing Systems, pp. 478–490, Springer International Publishing Cham."
+  },
+  {
+    "year": 2020,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "From the edge to the cloud: A continuous delivery and preparation model for processing big IoT data",
+    "authorsDisplay": "Sánchez-Gallegos, D. D., Carrizales-Espinoza, D., Reyes-Anastacio, H. G., Gonzalez-Compean, J., Carretero, J., Morales-Sandoval, M., & Galaviz-Mosqueda, A.",
+    "authorsData": "Sánchez-Gallegos, Carrizales-Espinoza, Reyes-Anastacio, Gonzalez-Compean, Carretero, Morales-Sandoval, Galaviz-Mosqueda",
+    "venue": "Simulation Modelling Practice and Theory, vol. 105, pp. 102136, Elsevier."
+  },
+  {
+    "year": 2020,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "On the continuous processing of health data in edge-fog-cloud computing by using micro/nanoservice composition",
+    "authorsDisplay": "Sánchez-Gallegos, D. D., Galaviz-Mosqueda, A., Gonzalez-Compean, J., Villarreal-Reyes, S., Perez-Ramos, A. E., Carrizales-Espinoza, D., & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Galaviz-Mosqueda, Gonzalez-Compean, Villarreal-Reyes, Perez-Ramos, Carrizales-Espinoza, Carretero",
+    "venue": "IEEE Access, vol. 8, pp. 120255–120281, IEEE."
+  },
+  {
+    "year": 2018,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A containerized service for clustering and categorization of weather records in the cloud",
+    "authorsDisplay": "Sánchez-Gallegos, D. D., Gonzalez-Compean, J., Alvarado-Barrientos, S., Sosa-Sosa, V. J., Tuxpan-Vargas, J., & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Gonzalez-Compean, Alvarado-Barrientos, Sosa-Sosa, Tuxpan-Vargas, Carretero",
+    "venue": "2018 8th International Conference on Computer Science and Information Technology (CSIT), pp. 26–31, IEEE."
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "An efficient pattern-based approach for workflow supporting large-scale science: The DagOnStar experience",
+    "authorsDisplay": "Sánchez-Gallegos, D. D., Di Luccio, D., Kosta, S., Gonzalez-Compean, J., & Montella, R.",
+    "authorsData": "Sánchez-Gallegos, Di Luccio, Kosta, Gonzalez-Compean, Montella",
+    "venue": "Future Generation Computer Systems, vol. 122, pp. 187–203, North-Holland."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A federated content distribution system to build health data synchronization services",
+    "authorsDisplay": "Carrizales-Espinoza, D., Sánchez-Gallegos, D. D., Gonzalez-Compean, J., & Carretero, J.",
+    "authorsData": "Carrizales-Espinoza, Sánchez-Gallegos, Gonzalez-Compean, Carretero",
+    "venue": "2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), pp. 1–8, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "FedFlow: a federated platform to build secure sharing and synchronization services for health dataflows",
+    "authorsDisplay": "Carrizales-Espinoza, D., Sanchez-Gallegos, D. D., Gonzalez-Compean, J. L., & Carretero, J.",
+    "authorsData": "Carrizales-Espinoza, Sanchez-Gallegos, Gonzalez-Compean, Carretero",
+    "venue": "Computing, vol. 105(5), pp. 1019–1037, Springer Vienna Vienna."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Serss: a storage mesh architecture to build serverless reliable storage services",
+    "authorsDisplay": "Carrizales-Espinoza, D., Sánchez-Gallegos, D. D., Gonzalez-Compean, J., Carretero, J., & Marcelin-Jimenez, R.",
+    "authorsData": "Carrizales-Espinoza, Sánchez-Gallegos, Gonzalez-Compean, Carretero, Marcelin-Jimenez",
+    "venue": "2022 30th Euromicro International Conference on Parallel, Distributed and Network-based Processing (PDP), pp. 88–91, IEEE."
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "PuzzleMesh: A puzzle model to build mesh of agnostic services for edge-fog-cloud",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Carretero, J., Marin-Castro, H. M., Tchernykh, A., & Montella, R.",
+    "authorsData": "Sanchez-Gallegos, Gonzalez-Compean, Carretero, Marin-Castro, Tchernykh, Montella",
+    "venue": "IEEE Transactions on Services Computing, vol. 16(2), pp. 1334–1345, IEEE."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "On the building of self-adaptable systems to efficiently manage medical data",
+    "authorsDisplay": "Sanchez-Gallegos, G., Sánchez-Gallegos, D. D., Gonzalez-Compean, J., & Carretero, J.",
+    "authorsData": "Sanchez-Gallegos, Sánchez-Gallegos, Gonzalez-Compean, Carretero",
+    "venue": "2022 22nd IEEE International Symposium on Cluster, Cloud and Internet Computing (CCGrid), pp. 985–992, IEEE."
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "On the efficient delivery and storage of IoT data in edge--fog--cloud environments",
+    "authorsDisplay": "Barron, A., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., & Morales-Sandoval, M.",
+    "authorsData": "Barron, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Morales-Sandoval",
+    "venue": "Sensors, vol. 22(18), pp. 7016, MDPI."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "CD/CV: Blockchain-based schemes for continuous verifiability and traceability of IoT data for edge--fog--cloud",
+    "authorsDisplay": "Martinez-Rendon, C., Gonzalez-Compean, J. L., Sánchez-Gallegos, D. D., & Carretero, J.",
+    "authorsData": "Martinez-Rendon, Gonzalez-Compean, Sánchez-Gallegos, Carretero",
+    "venue": "Information Processing & Management, vol. 60(1), pp. 103155, Pergamon."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "SecMesh: An efficient information security method for stream processing in edge-fog-cloud",
+    "authorsDisplay": "Torres-Charles, C. A., Carrizales-Espinoza, D. E., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+    "authorsData": "Torres-Charles, Carrizales-Espinoza, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+    "venue": "Proceedings of the 2022 7th International Conference on Cloud Computing and Internet of Things, pp. 8–16."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "On the building of efficient self-adaptable health data science services by using dynamic patterns",
+    "authorsDisplay": "Sanchez-Gallegos, G., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Reyes-Anastacio, H. G., & Carretero, J.",
+    "authorsData": "Sanchez-Gallegos, Sanchez-Gallegos, Gonzalez-Compean, Reyes-Anastacio, Carretero",
+    "venue": "Future Generation Computer Systems, vol. 145, pp. 478–495, North-Holland."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A containerized distributed processing platform for autonomous surface vehicles: preliminary results for marine litter detection",
+    "authorsDisplay": "Mellone, G., De Vita, C. G., Sánchez-Gallegos, D. D., Di Luccio, D., Mattei, G., Peluso, F., Aucelli, P. P. C., Ciaramella, A., & Montella, R.",
+    "authorsData": "Mellone, De Vita, Sánchez-Gallegos, Di Luccio, Mattei, Peluso, Aucelli, Ciaramella, Montella",
+    "venue": "2023 31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), pp. 144–148, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Blockchain-based schemes for continuous verifiability and traceability of IoT data",
+    "authorsDisplay": "Rendon, C. M., González-Compeán, J., Sánchez-Gallegos, D. D., & Carretero, J.",
+    "authorsData": "Rendon, González-Compeán, Sánchez-Gallegos, Carretero",
+    "venue": "2023 31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), pp. 169–172, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A novel approach for large-scale environmental data partitioning on cloud and on-premises storage for compute continuum applications",
+    "authorsDisplay": "Mellone, G., De Vita, C. G., Sánchez-Gallegos, D. D., Sánchez-Gallegos, G., Torres-Charles, C. A., Garcia-Blas, J., Carretero Pérez, J., Gonzalez-Compean, J., & Laccetti, G.",
+    "authorsData": "Mellone, De Vita, Sánchez-Gallegos, Sánchez-Gallegos, Torres-Charles, Garcia-Blas, Carretero Pérez, Gonzalez-Compean, Laccetti",
+    "venue": "Concurrency and Computation: Practice and Experience, pp. e7893."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Citizen science for the sea with information technologies: an open platform for gathering marine data and marine litter detection from leisure boat instruments",
+    "authorsDisplay": "De Vita, C. G., Mellone, G., Sanchez-Gallegos, D. D., Coviello, G., Romano, D., Lapegna, M., & Ciaramella, A.",
+    "authorsData": "De Vita, Mellone, Sanchez-Gallegos, Coviello, Romano, Lapegna, Ciaramella",
+    "venue": "2023 IEEE 19th International Conference on e-Science (e-Science), pp. 1–9, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "eScience serverless data storage services in the edge-fog-cloud continuum",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J. L., & Carretero, J.",
+    "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
+    "venue": "2023 IEEE 19th International Conference on e-Science (e-Science), pp. 1–4, IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A data science pipeline synchronisation method for edge-fog-cloud continuum",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Carretero, J., & Marin-Castro, H.",
+    "authorsData": "Sanchez-Gallegos, Gonzalez-Compean, Carretero, Marin-Castro",
+    "venue": "Proceedings of the SC'23 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis, pp. 2053–2064."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "An ad-hoc file system accelerated workflow application for accidental fire fast response",
+    "authorsDisplay": "De Vita, C. G., Caramiello, D., Mellone, G., Sánchez-Gallegos, G., Sánchez-Gallegos, D. D., Mele, V., Cavallo, S., & Di Luccio, D.",
+    "authorsData": "De Vita, Caramiello, Mellone, Sánchez-Gallegos, Sánchez-Gallegos, Mele, Cavallo, Di Luccio",
+    "venue": "Proceedings of the 2nd Workshop on Workflows in Distributed Environments, pp. 21–27."
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "StructMesh: A storage framework for serverless computing continuum",
+    "authorsDisplay": "Carrizales-Espinoza, D., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., & Carretero, J.",
+    "authorsData": "Carrizales-Espinoza, Sanchez-Gallegos, Gonzalez-Compean, Carretero",
+    "venue": "Future Generation Computer Systems, vol. 159, pp. 353–369, North-Holland."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "GeoNimbus: A serverless framework to build earth observation and environmental services",
+    "authorsDisplay": "Sánchez-Gallegos, D. D., Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C., Gonzalez-Compean, J., & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Carrizales-Espinoza, Zequeira, Torres-Charles, Gonzalez-Compean, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 166–177, Springer Nature Switzerland Cham."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Xook-Flow: an abstract communication channel model for the data exchange in computing continuum",
+    "authorsDisplay": "Torres Charles, C. A., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Carretero, J., & Gonzalez-Compean, J. L.",
+    "authorsData": "Torres Charles, Sanchez-Gallegos, Carrizales-Espinoza, Carretero, Gonzalez-Compean",
+    "venue": "Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing, pp. 243–244."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "D-Rex: Heterogeneity-Aware Reliability Framework and Adaptive Algorithms for Distributed Storage",
+    "authorsDisplay": "Gonthier, M., Sanchez-Gallegos, D. D., Pan, H., Nicolae, B., Zhou, S., Nguyen, H. D., Hayot-Sasson, V., Pauloski, G., Carretero, J., Chard, K., & others",
+    "authorsData": "Gonthier, Sanchez-Gallegos, Pan, Nicolae, Zhou, Nguyen, Hayot-Sasson, Pauloski, Carretero, Chard, others",
+    "venue": "Proceedings of the 39th ACM International Conference on Supercomputing, pp. 853–867."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "On the Building of Computing Continuum Systems Using Serverless Abstractions",
+    "authorsDisplay": "Sánchez-Gallegos, D. D. & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 385–390, Springer Nature Switzerland Cham."
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "New techniques to build and manage agnostic workflows for the processing of digital products",
+    "authorsDisplay": "Sánchez Gallegos, D. D.",
+    "authorsData": "Sánchez Gallegos",
+    "venue": ""
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "DynoStore: A wide-area distribution system for the management of data over heterogeneous storage",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Gonthier, M., Hayot-Sasson, V., Pauloski, J. G., Pan, H., Chard, K., Carretero, J., & Foster, I.",
+    "authorsData": "Sanchez-Gallegos, Gonzalez-Compean, Gonthier, Hayot-Sasson, Pauloski, Pan, Chard, Carretero, Foster",
+    "venue": "2025 IEEE 25th International Symposium on Cluster, Cloud and Internet Computing (CCGrid), pp. 83–92."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "OrbiFaaS: An orbital method to build Continuum Earth Observation Systems",
+    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J. L., & Carretero, J.",
+    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
+    "venue": "Future Generation Computer Systems, pp. 107992, North-Holland."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA Torres-Charles et al.",
+    "authorsDisplay": "Torres-Charles, C. A., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+    "authorsData": "Torres-Charles, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+    "venue": "Cluster Computing, vol. 28(14), pp. 889, Springer US New York."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Nez: A design-driven skeleton model for building continuum AI-based and analytic systems",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., Nunez-Gaona, M. A., Aguirre-Meneses, H., & Carretero, J.",
+    "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Nunez-Gaona, Aguirre-Meneses, Carretero",
+    "venue": "Information and Software Technology, pp. 107911, Elsevier."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "AI and HPC for intense rain event early warning leveraging real-time weather radar",
+    "authorsDisplay": "Di Luccio, D., De Vita, C. G., Mellone, G., Sánchez-Gallegos, D. D., Corvino, P., Di Sarno, M., De Luca, P., Di Nardo, E., Capozzi, V., Bucciero, V., & others",
+    "authorsData": "Di Luccio, De Vita, Mellone, Sánchez-Gallegos, Corvino, Di Sarno, De Luca, Di Nardo, Capozzi, Bucciero, others",
+    "venue": "2025 IEEE International Conference on eScience (eScience), pp. 315–316, IEEE."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Smart Cities: A Systematic Review of Emerging Technologies.",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D. E., Torres-Charles, C., & Carretero, J.",
+    "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Torres-Charles, Carretero",
+    "venue": "Smart Cities (2624-6511), vol. 8(5)."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "DAGonStore: Reliable Data Management for Workflows on the Computing Continuum with DynoStore and DAGonStar",
+    "authorsDisplay": "Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Carretero, J., & Montella, R.",
+    "authorsData": "Sanchez-Gallegos, Gonzalez-Compean, Carretero, Montella",
+    "venue": "Proceedings of the SC'25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 2213–2224."
+  }
+]

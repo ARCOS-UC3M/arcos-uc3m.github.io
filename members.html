@@ -1,105 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARCOS Research Group – UC3M</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members | ARCOS Research Group</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              600: '#004e92', // Azul corporativo UC3M
+              800: '#003366',
+              900: '#00264d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="scripts/components.js"></script>
+
 </head>
 
-<body>
-  <header>
-    <a href="index.html">
-      <img src="arcos-2.png" alt="ARCOS Logo" style="max-width:360px; margin-bottom:1rem;" />
-    </a>
-  </header>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-  <nav>
-    <div class="dropdown">
-      <a href="index.html#about">About us ▼</a>
-      <div class="dropdown-content">
-        <a href="members.html">Members</a>
+  <div id="navbar-container"></div>
+
+  <header class="bg-white border-b border-gray-200 pb-12">
+    <div class="max-w-7xl mx-auto pt-16 px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Our People
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-500 font-light mb-8">
+        Meet the researchers, professors, and students driving innovation at ARCOS.
+      </p>
+
+      <div class="max-w-md mx-auto relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+        </div>
+        <input type="text" id="searchInput"
+          class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-full leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 sm:text-sm shadow-sm transition"
+          placeholder="Search member by name..." autocomplete="off">
       </div>
     </div>
-    <a href="index.html#research">Research</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#tools">Tools</a>
-    <a href="index.html#conferences">Conferences</a>
-    <a href="index.html#publications">Publications</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
+  </header>
 
-  <h1>ARCOS Group Members</h1>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16" id="membersContainer">
 
-  <section id="fp" class="section">
-    <h2>Full Professor</h2>
-    <ul>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3791">
-          Jesús Carretero Pérez
-        </a>
-      </li>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3167">
-          Félix García Carballeira
-        </a>
-      </li>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1204">
-        José Daniel García Sánchez
-        </a>
-      </li>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1370">
-          Francisco Javier García Blas
-        </a>
-      </li>
-    </ul>
-  </section>
+    <section class="member-section">
+      <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
+        Full Professors
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-  <section id="ap" class="section">
-    <h2>Associate Professor</h2>
-    <ul>
-      <li>Alejandro Calderón Mateos</li>
-      <li>David Expósito Singh</li>
-      <li>Javier Fernández Muñoz</li>
-    </ul>
-  </section>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-brand-600 font-bold mr-4 flex-shrink-0">
+            JC
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Jesús Carretero Pérez</h4>
+            <p class="text-sm text-gray-500">Full Professor</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3791"
+              target="_blank" class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
 
-  <section id="post-dr" class="section">
-    <h2>Post-doctoral Researcher</h2>
-    <ul>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-20197">
-          Alberto Cascajo García
-        </a>
-      </li>
-      <li>
-        <a href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-289541">
-          Dante Domizzi Sánchez Gallegos
-        </a>
-      </li>
-      <li>Elías Del Pozo Puñal</li>
-    </ul>
-  </section>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-brand-600 font-bold mr-4 flex-shrink-0">
+            FG
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Félix García Carballeira</h4>
+            <p class="text-sm text-gray-500">Full Professor</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3167"
+              target="_blank" class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
 
-  <section id="minions" class="section">
-    <h2>Pre-doctoral Researcher</h2>
-    <ul>
-      <li>Diego Camarmas Alonso</li>
-      <li>Paula Sánchez Checa</li>
-      <li>Diana Elisabeth Carrizales</li>
-      <li>Genaro Juan Sánchez Gallegos</li>
-      <li>Catherine Alessandra Torres Charles</li>
-      <li>Cosmin Octavian Petre Carastoian</li>
-      <li>Darío Muñoz Muñoz</li>
-    </ul>
-  </section>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-brand-600 font-bold mr-4 flex-shrink-0">
+            JG
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">José Daniel García Sánchez</h4>
+            <p class="text-sm text-gray-500">Full Professor</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1204"
+              target="_blank" class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
 
-  <footer>
-    &copy; 2025 ARCOS Research Group – UC3M
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-brand-600 font-bold mr-4 flex-shrink-0">
+            FJ
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Francisco Javier García Blas</h4>
+            <p class="text-sm text-gray-500">Full Professor</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-1370"
+              target="_blank" class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
+        Associate Professors
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            AC
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Alejandro Calderón Mateos</h4>
+            <p class="text-sm text-gray-500">Associate Professor</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169576/idu-4000"
+              target="_blank" class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            DE
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">David Expósito Singh</h4>
+            <p class="text-sm text-gray-500">Associate Professor</p>
+          </div>
+        </div>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            JF
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Javier Fernández Muñoz</h4>
+            <p class="text-sm text-gray-500">Associate Professor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
+        Post-doctoral Researchers
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            AC
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Alberto Cascajo García</h4>
+            <p class="text-sm text-gray-500">Post-doctoral Researcher</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-20197"
+              class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            DD
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Dante D. Sánchez Gallegos</h4>
+            <p class="text-sm text-gray-500">Post-doctoral Researcher</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330171644/idu-289541"
+              class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 font-bold mr-4 flex-shrink-0">
+            ED
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Elías Del Pozo Puñal</h4>
+            <p class="text-sm text-gray-500">Post-doctoral Researcher</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="text-2xl font-serif font-bold text-brand-900 mb-8 border-b border-gray-200 pb-2">
+        PhD Students
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            DC
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Diego Camarmas Alonso</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330172400/idu-230055"
+              class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            PS
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Paula Sánchez Checa</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+            <a target="_blank" href="https://www.uc3m.es/ss/Satellite/DeptInformatica/en/DetallePersonalDept/1371330172400/Detalle_Personal_Departamento/idu-281971"
+              class="text-xs text-brand-600 hover:underline mt-1 inline-block">View Profile <i
+                class="fa-solid fa-arrow-up-right-from-square ml-0.5"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            DE
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Diana Elisabeth Carrizales</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            GJ
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Genaro Juan Sánchez</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            CA
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Catherine Alessandra Torres</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            CO
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Cosmin Octavian Petre</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+          </div>
+        </div>
+
+        <div
+          class="member-item flex items-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-300 transition">
+          <div
+            class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-bold mr-4 flex-shrink-0">
+            DM
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 member-name">Darío Muñoz Muñoz</h4>
+            <p class="text-sm text-gray-500">PhD Student</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <section class="member-section">
+      <h2 class="text-2xl font-serif font-bold text-gray-700 mb-6 border-b border-gray-200 pb-2">
+        Tech Manager
+      </h2>
+      <div class="member-item bg-gray-100 p-6 rounded-lg border border-gray-200 max-w-md">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="bg-gray-300 rounded-full w-10 h-10 flex items-center justify-center text-gray-600 flex-shrink-0">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h4 class="font-bold text-gray-900 member-name">Cosmin Octavian</h4>
+        </div>
+        <p class="text-sm text-gray-600 ml-13">System Administrator & Lab Support</p>
+      </div>
+    </section> -->
+
+    <div id="noResults" class="hidden text-center py-12">
+      <i class="fa-solid fa-user-slash text-4xl text-gray-300 mb-3"></i>
+      <p class="text-gray-500">No hemos encontrado miembros con ese nombre.</p>
+    </div>
+
+  </main>
+
+  <footer id="contact" class="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h5 class="font-serif font-bold text-lg mb-4 text-white">ARCOS Research Group</h5>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Universidad Carlos III de Madrid<br>
+          Av. de la Universidad, 30<br>
+          28911 Leganés, Madrid, Spain
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Contact</h5>
+        <p class="text-gray-400 text-sm mb-2">
+          <i class="fa-solid fa-envelope mr-2"></i> jesus.carretero@uc3m.es
+        </p>
+        <p class="text-gray-400 text-sm">
+          <i class="fa-solid fa-envelope mr-2"></i> fgcarbal@inf.uc3m.es
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-white">Links</h5>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li><a href="https://www.uc3m.es" class="hover:text-white transition">UC3M Home</a></li>
+          <li><a href="members.html" class="hover:text-white transition">Members</a></li>
+          <li><a href="/login" class="hover:text-brand-200 transition text-brand-400 font-semibold">Admin Panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+      &copy; 2025 ARCOS Research Group – UC3M.
+    </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInput');
+      const memberItems = document.querySelectorAll('.member-item');
+      const sections = document.querySelectorAll('.member-section');
+      const noResultsMsg = document.getElementById('noResults');
+
+      searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        let hasVisibleMembers = false;
+
+        // 1. Filtrar cada miembro individualmente
+        memberItems.forEach(item => {
+          // Busca el elemento que contiene el nombre (usando la clase member-name que añadimos)
+          const nameElement = item.querySelector('.member-name');
+          // O si es un li directo, toma todo el texto
+          const textToSearch = nameElement ? nameElement.textContent : item.textContent;
+
+          if (textToSearch.toLowerCase().includes(searchTerm)) {
+            item.classList.remove('hidden');
+            hasVisibleMembers = true;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        // 2. Ocultar secciones vacías
+        sections.forEach(section => {
+          // Ver si hay items visibles dentro de esta sección
+          const visibleItemsInSection = section.querySelectorAll('.member-item:not(.hidden)');
+          if (visibleItemsInSection.length === 0) {
+            section.classList.add('hidden');
+          } else {
+            section.classList.remove('hidden');
+          }
+        });
+
+        // 3. Mostrar mensaje de "No resultados" si todo está oculto
+        if (!hasVisibleMembers) {
+          noResultsMsg.classList.remove('hidden');
+        } else {
+          noResultsMsg.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+  <div id="footer-container"></div>
+
+
 </body>
 
 </html>
