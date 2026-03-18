@@ -14,8 +14,8 @@
       "type": "journal",
       "badge": "Jour",
       "title": "A novel approach for large-scale environmental data partitioning on cloud and on-premises storage for compute continuum applications",
-      "authorsDisplay": "Mellone, G., De Vita, C. G., Sánchez-Gallegos, D. D., Sánchez-Gallegos, G., Torres-Charles, C. A., Garcia-Blas, J., Carretero Perez, J., Gonzalez-Compean, J., & Laccetti, G.",
-      "authorsData": "Mellone, De Vita, Sánchez-Gallegos, Sánchez-Gallegos, Torres-Charles, Garcia-Blas, Carretero Perez, Gonzalez-Compean, Laccetti",
+      "authorsDisplay": "Mellone, G., De Vita, C. G., Sanchez-Gallegos, D. D., Sanchez-Gallegos, G., Torres-Charles, C. A., Garcia-Blas, J., Carretero Perez, J., Gonzalez-Compean, J., & Laccetti, G.",
+      "authorsData": "Mellone, De Vita, Sanchez-Gallegos, Sanchez-Gallegos, Torres-Charles, Garcia-Blas, Carretero Perez, Gonzalez-Compean, Laccetti",
       "venue": "Concurrency and Computation: Practice and Experience, vol. 35(25), pp. e7893, Wiley Online Library."
     }
   ],
@@ -54,8 +54,8 @@
       "type": "conference",
       "badge": "Conf",
       "title": "GeoNimbus: A serverless framework to build earth observation and environmental services",
-      "authorsDisplay": "Sánchez-Gallegos, D. D., Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C., Gonzalez-Compean, J., & Carretero, J.",
-      "authorsData": "Sánchez-Gallegos, Carrizales-Espinoza, Zequeira, Torres-Charles, Gonzalez-Compean, Carretero",
+      "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C., Gonzalez-Compean, J., & Carretero, J.",
+      "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Zequeira, Torres-Charles, Gonzalez-Compean, Carretero",
       "venue": "European Conference on Parallel Processing, pp. 166–177, Springer Nature Switzerland Cham."
     }
   ],
@@ -114,8 +114,8 @@
       "type": "journal",
       "badge": "Jour",
       "title": "Smart cities: A systematic review of emerging technologies",
-      "authorsDisplay": "Sánchez Gallegos, D. D., Carrizales Espinoza, D., Torres Charles, C. A., & Carretero Pérez, J.",
-      "authorsData": "Sánchez Gallegos, Carrizales Espinoza, Torres Charles, Carretero Pérez",
+      "authorsDisplay": "Sanchez Gallegos, D. D., Carrizales Espinoza, D., Torres Charles, C. A., & Carretero Perez, J.",
+      "authorsData": "Sanchez Gallegos, Carrizales Espinoza, Torres Charles, Carretero Perez",
       "venue": "MDPI."
     }
   ]
