@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús Carretero Pérez - Profile | ARCOS Research Group</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              600: '#004e92', // Azul corporativo UC3M
+              800: '#003366',
+              900: '#00264d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="scripts/components.js"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <div id="navbar-container"></div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+
+    <section class="flex flex-col md:flex-row items-center gap-10 border-b border-gray-200 pb-12">
+      <img src="assets/jesus_carretero.png" alt="Jesús Carretero Pérez"
+        class="w-48 h-48 rounded-full border-4 border-white shadow-lg object-cover">
+
+      <div class="flex-grow">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+          Jesús Carretero Pérez
+        </h1>
+        <p class="text-xl text-gray-600 font-light mb-4">
+          Full Professor of Computer Architecture
+        </p>
+        <p class="text-base text-gray-500 max-w-xl">
+          Head of ARCOS Research Group. Director of the Master's and PhD programs in Computer Science and Technology.
+        </p>
+
+        <div class="flex items-center gap-6 mt-8">
+          <a href="mailto:jesus.carretero@uc3m.es" class="text-gray-500 hover:text-brand-600 transition" title="Email">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+          </a>
+          <a href="tel:+34916249458" class="text-gray-500 hover:text-brand-600 transition" title="Phone">
+            <i class="fa-solid fa-phone fa-xl"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-brand-600 transition" title="Office Location">
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-brand-600 transition" title="Personal Website">
+            <i class="fa-solid fa-globe fa-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <aside class="w-full md:w-64 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex-shrink-0">
+        <h3 class="text-lg font-semibold text-gray-900 mb-5 border-b pb-2">Links</h3>
+        <ul class="space-y-4 text-sm text-gray-700">
+          <li class="flex items-center gap-3">
+            <i class="fa-brands fa-linkedin text-brand-600 fa-lg"></i>
+            <a href="https://linkedin.com/in/..." class="text-brand-600 hover:underline">LinkedIn Profile</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-brands fa-orcid text-brand-600 fa-lg"></i>
+            <a href="https://orcid.org/..." class="text-brand-600 hover:underline">ORCID Profile</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-graduation-cap text-brand-600 fa-lg"></i>
+            <a href="https://dialnet.unirioja.es/..." class="text-brand-600 hover:underline">Dialnet Profile</a>
+          </li>
+          <li class="flex items-center gap-3 pt-2">
+            <i class="fa-solid fa-file-pdf text-gray-400 fa-lg"></i>
+            <a href="#" class="text-gray-600 hover:underline">Curriculum Vitae (PDF)</a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <div class="space-y-8">
+
+      <details class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+          <h2 class="text-2xl font-serif font-bold text-brand-900">
+            Biography
+          </h2>
+          <span class="relative w-5 h-5 flex-shrink-0">
+            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+          </span>
+        </summary>
+        <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
+          <p>
+            Jesús Carretero Pérez is a Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (Spain). He also serves as Coordinator of the Informatics area for the Spanish Research Agency since 2020. His research activity is centered on high-performance computing systems, large-scale distributed systems, data-intensive computing, IoT and real-time systems. He has participated and leaded several national and international research projects in these areas, and he is currently coordinating the EuroHPC project ADMIRE, ``Adaptive multi-tier intelligent data manager for Exascale'', aiming towards ad-hoc malleable storage systems. Prof. Carretero is Associated Editor of the journals ACM Computer Surveys, Future Generation Computing Systems, and Transactions on Parallel and Distributed Systems. He has published more than 300 papers in journals and international conferences, editor of several books of proceedings, and co-author of several textbooks related to Operating Systems and Computer Architecture. He has served as general chair of CCGRID 2017, IC3PP2016, or HPCC 2011, and Program Chair of ISPA 2012, EuroMPI 2013, and Applications track vice-chair of SC22.
+          </p>
+          <p>
+            His research interests include high-performance computing, distributed systems, and data-intensive computing.
+          </p>
+        </div>
+      </details>
+
+      <details class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+          <h2 class="text-2xl font-serif font-bold text-brand-900">
+            Selected Publications
+          </h2>
+          <span class="relative w-5 h-5 flex-shrink-0">
+            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+          </span>
+        </summary>
+        <div class="mt-6 text-gray-700 space-y-4">
+          <ul class="list-disc list-inside space-y-2 text-sm">
+            <li>Author 1, Author 2. (Year). "Title of the Publication". *Journal/Conference Name*. <a href="#" class="text-brand-600 hover:underline">Link</a></li>
+            <li>Author 1, Author 2. (Year). "Title of another Publication". *Journal/Conference Name*. <a href="#" class="text-brand-600 hover:underline">Link</a></li>
+          </ul>
+        </div>
+      </details>
+
+      <details open class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+          <h2 class="text-2xl font-serif font-bold text-brand-900">
+            Directed PhD Students (Graduated)
+          </h2>
+          <span class="relative w-5 h-5 flex-shrink-0">
+            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+          </span>
+        </summary>
+        <div class="mt-6 text-gray-700 space-y-6">
+          <ul class="list-decimal list-inside space-y-4 text-sm">
+            <li>
+              <strong>Name of Student 1</strong>
+              <p class="text-gray-500 ml-5">"Thesis Title", graduated in 2023.</p>
+            </li>
+            <li>
+              <strong>Name of Student 2</strong>
+              <p class="text-gray-500 ml-5">"Thesis Title", graduated in 2021.</p>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+          <h2 class="text-2xl font-serif font-bold text-brand-900">
+            Selected Research Projects
+          </h2>
+          <span class="relative w-5 h-5 flex-shrink-0">
+            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+          </span>
+        </summary>
+        <div class="mt-6 text-gray-700 space-y-6">
+          <ul class="list-disc list-inside space-y-4 text-sm">
+            <li>
+              <strong>Project Title 1</strong>
+              <p class="text-gray-500 ml-5">Funding Agency, 2018 - 2023. Role: Principal Investigator.</p>
+            </li>
+            <li>
+              <strong>Project Title 2</strong>
+              <p class="text-gray-500 ml-5">Funding Agency, 2018 - 2022. Role: Principal Investigator.</p>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+          <h2 class="text-2xl font-serif font-bold text-brand-900">
+            Teaching & Other Activities
+          </h2>
+          <span class="relative w-5 h-5 flex-shrink-0">
+            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+          </span>
+        </summary>
+        <div class="mt-6 text-gray-700 space-y-4">
+          <ul class="list-disc list-inside space-y-2 text-sm">
+            <li>Undergraduate course 1</li>
+            <li>Master's course 2</li>
+          </ul>
+        </div>
+      </details>
+      
+    </div>
+
+    <a href="../members.html" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-600 mt-12 transition">
+      <i class="fa-solid fa-arrow-left"></i>
+      Back to Members
+    </a>
+
+  </main>
+
+  <div id="footer-container"></div>
+
+</body>
+
+</html>
