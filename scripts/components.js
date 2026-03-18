@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // loadComponent("navbar-container", "navbar.html", () => {
     //     highlightActiveLink(); // Callback para iluminar el enlace después de cargar
     // });
-    loadNavbar("navbar.html", () => {
+    loadNavbar("/navbar.html", () => {
         highlightActiveLink();
     });
 
     // Cargar Footer
-    loadComponent("footer-container", "footer.html");
+    loadComponent("footer-container", "/footer.html");
 });
 
 // Función genérica para cargar HTML externo
