@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const studentType = urlParams.get('member');
 
-    // 2. Construir la ruta dinámicamente
+    // Construir la ruta dinámicamente
     const jsonPath = `/profiles/${studentType}/assets/phd-graduated.json`; // Usamos backticks (`) para insertar la variable
 
     // console.log("El valor de 'member' capturado de la URL es:", studentType);
@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             listContainer.innerHTML = '<li class="text-red-500 list-none">Error loading data.</li>';
         });
 });
+
