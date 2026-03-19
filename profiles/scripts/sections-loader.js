@@ -7,7 +7,7 @@ async function loadPublications() {
     //const member = urlParams.get('member');
 
     const authorToSearch = window.PROFILE_CONFIG.searchName
-    console.log("El valor de 'member' capturado de la URL es:", authorToSearch);
+    // console.log("El valor de 'member' capturado de la URL es:", authorToSearch);
 
     try {
         const response = await fetch('/publications.json');
