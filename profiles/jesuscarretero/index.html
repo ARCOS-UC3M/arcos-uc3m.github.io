@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Jesús Carretero Pérez - Profile | ARCOS Research Group</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
@@ -33,6 +35,11 @@
         }
       }
     }
+    // global objects for this profile.
+    window.PROFILE_CONFIG = {
+      memberId: "jesuscarretero",
+      searchName: "Carretero",  // El nombre que usaremos para filtrar publicaciones
+    };
   </script>
   <!-- <script src="/scripts/components.js"></script> -->
 
@@ -56,10 +63,13 @@
             Jesús Carretero Pérez
           </h1>
           <p class="text-xl text-gray-600 font-light mb-4">
-            Full Professor of Computer Architecture
+            Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (Spain)
           </p>
           <p class="text-base text-gray-500 max-w-xl">
-            Head of ARCOS Research Group. Coordinator of the ADMIRE EuroHPC project.
+            Head of ARCOS Research Group.
+          </p>
+          <p class="text-base text-gray-500 max-w-xl">
+            Coordinator of the ADMIRE EuroHPC project.
           </p>
 
           <div class="flex flex-col gap-3 mt-8">
@@ -129,7 +139,7 @@
             Interests</a>
           <a href="#publications"
             class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Last
-            Publications</a>
+            Journals</a>
           <a href="#projects"
             class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Projects</a>
           <a href="#teaching"
@@ -186,12 +196,19 @@
           <details id="publications"
             class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
             <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-              <h2 class="text-2xl font-serif font-bold text-brand-900">Last Publications</h2>
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Last Journals</h2>
               <span class="relative w-5 h-5 flex-shrink-0"><i
                   class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
             </summary>
-            <div class="mt-6 text-gray-700 space-y-4">
-              <p class="text-sm">List of selected publications goes here...</p>
+
+            <div id="publications-list" class="mt-6 flex flex-col gap-4">
+              <p class="text-gray-400 italic">Loading publications...</p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+              <a href="/publications.html" class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                View all publications in ARCOS <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
             </div>
           </details>
 
@@ -286,5 +303,6 @@
 
 <script src="/profiles/scripts/phd-students-loader.js"></script>
 <script src="/profiles/scripts/menu.js"></script>
+<script src="/profiles/scripts/sections-loader.js"></script>
 
 </html>

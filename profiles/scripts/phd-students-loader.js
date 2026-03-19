@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // const jsonFile = 'phd_students.json'; 
     // obtener el parámetro 'type' de la URL
     const urlParams = new URLSearchParams(window.location.search);
-    const studentType = urlParams.get('member');
+    const member = urlParams.get('member');
 
     // Construir la ruta dinámicamente
-    const jsonPath = `/profiles/${studentType}/assets/phd-graduated.json`; // Usamos backticks (`) para insertar la variable
+    const jsonPath = `/profiles/${member}/assets/phd-graduated.json`; // Usamos backticks (`) para insertar la variable
 
-    // console.log("El valor de 'member' capturado de la URL es:", studentType);
+    // console.log("El valor de 'member' capturado de la URL es:", member);
 
     // Seleccionar el contenedor donde inyectaremos los datos
     const listContainer = document.getElementById('phd-graduated-list');
