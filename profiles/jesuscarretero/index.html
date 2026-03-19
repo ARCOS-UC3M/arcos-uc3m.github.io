@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Jesús Carretero Pérez - Profile | ARCOS Research Group</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
@@ -33,6 +35,11 @@
         }
       }
     }
+    // global objects for this profile.
+    window.PROFILE_CONFIG = {
+      memberId: "jesuscarretero",
+      searchName: "Carretero",  // El nombre que usaremos para filtrar publicaciones
+    };
   </script>
   <!-- <script src="/scripts/components.js"></script> -->
 
@@ -44,55 +51,70 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
 
-    <section class="flex flex-col md:flex-row items-center gap-10 border-b border-gray-200 pb-12">
-      <img src="/profiles/jesuscarretero/assets/foto-carretero.jpg" alt="Jesús Carretero Pérez"
-        class="w-52 h-62 rounded-full border-4 border-white shadow-lg object-cover">
+    <section class="flex flex-col lg:flex-row items-start justify-between gap-10 border-b border-gray-200 pb-12">
 
-      <div class="flex-grow">
-        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-          Jesús Carretero Pérez
-        </h1>
-        <p class="text-xl text-gray-600 font-light mb-4">
-          Full Professor of Computer Architecture
-        </p>
-        <p class="text-base text-gray-500 max-w-xl">
-          Head of ARCOS Research Group. Coordinator of the ADMIRE EuroHPC project.
-        </p>
+      <div class="flex flex-col sm:flex-row items-start gap-8 flex-grow">
 
-        <div class="flex items-center gap-6 mt-8">
-          <a href="mailto:jesus.carretero@uc3m.es" class="text-gray-500 hover:text-brand-600 transition" title="Email">
-            <i class="fa-solid fa-envelope fa-xl"></i>
-          </a>
-          <a href="tel:+34916249458" class="text-gray-500 hover:text-brand-600 transition" title="Phone">
-            <i class="fa-solid fa-phone fa-xl"></i>
-          </a>
-          <a href="#" class="text-gray-500 hover:text-brand-600 transition" title="Office Location">
-            <i class="fa-solid fa-location-dot fa-xl"></i>
-          </a>
-          <a href="https://www.arcos.inf.uc3m.es/jcarretero/" class="text-gray-500 hover:text-brand-600 transition" title="Personal Website" target="_blank">
-            <i class="fa-solid fa-globe fa-xl"></i>
-          </a>
+        <img src="/profiles/jesuscarretero/assets/foto-carretero.jpg" alt="Jesús Carretero Pérez"
+          class="w-52 h-62 rounded-full border-4 border-white shadow-lg object-cover flex-shrink-0">
+
+        <div>
+          <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+            Jesús Carretero Pérez
+          </h1>
+          <p class="text-xl text-gray-600 font-light mb-4">
+            Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (Spain)
+          </p>
+          <p class="text-base text-gray-500 max-w-xl">
+            Head of ARCOS Research Group.
+          </p>
+          <p class="text-base text-gray-500 max-w-xl">
+            Coordinator of the ADMIRE EuroHPC project.
+          </p>
+
+          <div class="flex flex-col gap-3 mt-8">
+            <div class="flex items-center gap-3 text-gray-600">
+              <i class="fa-solid fa-envelope w-6 text-center text-gray-500"></i>
+              <span>jesus.carretero@uc3m.es</span>
+            </div>
+
+            <div class="flex items-center gap-3 text-gray-600">
+              <i class="fa-solid fa-phone w-6 text-center text-gray-500"></i>
+              <span>+34 91 624 94 58</span>
+            </div>
+
+            <div class="flex items-center gap-3 text-gray-600">
+              <i class="fa-solid fa-location-dot w-6 text-center text-gray-500"></i>
+              <span>2.2.A06</span>
+            </div>
+
+            <a target="_blank"
+              href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3791"
+              class="flex items-center gap-3 text-gray-600 hover:text-brand-600 transition group" title="UC3M Website">
+              <i class="fa-solid fa-globe w-6 text-center text-gray-500 group-hover:text-brand-600 transition"></i>
+              <span class="group-hover:underline">UC3M Website</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <aside class="w-full md:w-64 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex-shrink-0">
+      <aside class="w-full lg:w-72 bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex-shrink-0">
         <h3 class="text-lg font-semibold text-gray-900 mb-5 border-b pb-2">Links</h3>
         <ul class="space-y-4 text-sm text-gray-700">
           <li class="flex items-center gap-3">
             <i class="fa-brands fa-linkedin text-brand-600 fa-lg"></i>
-            <a target="_blank" href="https://www.linkedin.com/in/jesus-carretero-109b1717" class="text-brand-600 hover:underline">LinkedIn</a>
+            <a target="_blank" href="https://www.linkedin.com/in/jesus-carretero-109b1717"
+              class="text-brand-600 hover:underline">LinkedIn</a>
           </li>
           <li class="flex items-center gap-3">
             <i class="fa-brands fa-orcid text-brand-600 fa-lg"></i>
-            <a href="https://orcid.org/0000-0002-1413-4793" class="text-brand-600 hover:underline" target="_blank">ORCID</a>
+            <a href="https://orcid.org/0000-0002-1413-4793" class="text-brand-600 hover:underline"
+              target="_blank">ORCID</a>
           </li>
-          <!-- <li class="flex items-center gap-3">
-            <i class="fa-solid fa-graduation-cap text-brand-600 fa-lg"></i>
-            <a href="http://www.scopus.com/inward/authorDetails.url?authorID=55140831900&partnerID=MN8TOARS" class="text-brand-600 hover:underline" target="_blank">Scopus Profile</a>
-          </li> -->
           <li class="flex items-center gap-3">
             <i class="fa-solid fa-graduation-cap text-brand-600 fa-lg"></i>
-            <a href="https://dialnet.unirioja.es/servlet/autor?codigo=2292261" class="text-brand-600 hover:underline" target="_blank">Dialnet</a>
+            <a href="https://dialnet.unirioja.es/servlet/autor?codigo=2292261" class="text-brand-600 hover:underline"
+              target="_blank">Dialnet</a>
           </li>
           <li class="flex items-center gap-3 pt-2">
             <i class="fa-solid fa-file-pdf text-gray-400 fa-lg"></i>
@@ -100,114 +122,178 @@
           </li>
         </ul>
       </aside>
+
     </section>
 
-    <div class="space-y-8">
 
-      <details open class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-          <h2 class="text-2xl font-serif font-bold text-brand-900">
-            Biography
-          </h2>
-          <span class="relative w-5 h-5 flex-shrink-0">
-            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-          </span>
-        </summary>
-        <div class="mt-6 text-gray-700 leading-relaxed space-y-4">
-          <p>
-            Jesus Carretero is a Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (Spain), where he is responsible for that knowledge area since 2000 and leader of the Computer Architecture Research Group (ARCOS).
-          </p>
-          <p>
-            His research activity is centered on high-performance computing systems, large-scale distributed systems, data-intensive computing, IoT, and real-time systems. He has participated in and led several national and international research projects funded by the Madrid Regional Government, the Spanish Education Ministry, and the European Union.
-          </p>
-          <p>
-            Prof. Carretero is currently the Coordinator of the Spanish Research Agency for the Informatics area, a European Union projects evaluator, a senior member of the IEEE Computer Society, and a member of the ACM.
-          </p>
-        </div>
-      </details>
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-4 gap-10 items-start">
 
-      <details open class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-          <h2 class="text-2xl font-serif font-bold text-brand-900">
-            Last Publications
-          </h2>
-          <span class="relative w-5 h-5 flex-shrink-0">
-            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-          </span>
-        </summary>
-        <div class="mt-6 text-gray-700 space-y-4">
-          <ul class="list-disc list-inside space-y-3 text-sm">
-            <li><strong>HERCULES: A scalable and elastic ad-hoc file system for large-scale computing systems.</strong> <em>Future Generation Computer Systems</em> (2026). <a href="https://doi.org/10.1016/j.future.2025.108350" target="_blank" class="text-brand-600 hover:underline">Link</a></li>
-            <li><strong>Applying hypervisor-based fault tolerance techniques to safety-critical embedded systems.</strong> <em>Microprocessors and Microsystems</em> (2026). <a href="https://doi.org/10.1016/j.micpro.2026.105255" target="_blank" class="text-brand-600 hover:underline">Link</a></li>
-            <li><strong>Efficient Data Elasticity for HPC: A Malleable Ad-hoc In-memory File System for Ephemeral Data.</strong> <em>Conference Paper</em> (2026). <a href="https://doi.org/10.1145/3784828.3785165" target="_blank" class="text-brand-600 hover:underline">Link</a></li>
-            <li><strong>Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm.</strong> <em>Engineering Applications of Artificial Intelligence</em> (2025). <a href="https://doi.org/10.1016/j.engappai.2025.112503" target="_blank" class="text-brand-600 hover:underline">Link</a></li>
-            <li><strong>Smart Cities: A Systematic Review of Emerging Technologies.</strong> <em>Smart Cities</em> (2025). <a href="https://doi.org/10.3390/smartcities8050173" target="_blank" class="text-brand-600 hover:underline">Link</a></li>
-          </ul>
-        </div>
-      </details>
+      <aside class="hidden lg:block col-span-1 sticky top-8">
+        <nav class="flex flex-col gap-1 border-l-2 border-gray-100 pl-4">
+          <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">On this page</h3>
 
-      <details open class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-          <h2 class="text-2xl font-serif font-bold text-brand-900">
-            Research Projects
-          </h2>
-          <span class="relative w-5 h-5 flex-shrink-0">
-            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-          </span>
-        </summary>
-        <div class="mt-6 text-gray-700 space-y-6">
-          <ul class="list-disc list-inside space-y-4 text-sm">
-            <li>
-              <strong>ADMIRE EuroHPC Project</strong>
-              <p class="text-gray-500 ml-5">Role: Project Coordinator. (European Union)</p>
-            </li>
-            <li>
-              <strong>IC1305 COST Action "Network for Sustainable Ultrascale Computing Systems (NESUS)"</strong>
-              <p class="text-gray-500 ml-5">Role: Action Chair. (European Union)</p>
-            </li>
-          </ul>
-        </div>
-      </details>
+          <a href="#about"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">About</a>
+          <a href="#research"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Research
+            Interests</a>
+          <a href="#publications"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Last
+            Journals</a>
+          <a href="#projects"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Projects</a>
+          <a href="#teaching"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Teaching
+            & Other</a>
+          <a href="#service"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Professional
+            Service</a>
+          <a href="#phd-thesis"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Directed
+            PhD Thesis</a>
+        </nav>
+      </aside>
 
-      <details open class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-          <h2 class="text-2xl font-serif font-bold text-brand-900">
-            Conference Organization
-          </h2>
-          <span class="relative w-5 h-5 flex-shrink-0">
-            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-          </span>
-        </summary>
-        <div class="mt-6 text-gray-700 space-y-4">
-          <ul class="list-disc list-inside space-y-2 text-sm">
-            <li><strong>General Chair:</strong> CCGRID 2017, HPCC 2011, and MUE 2012</li>
-            <li><strong>Program Chair:</strong> ISPA 2012, EuroMPI 2013, C4Bio 2014, and ESAA 2014</li>
-          </ul>
-        </div>
-      </details>
-      
-      <details class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-          <h2 class="text-2xl font-serif font-bold text-brand-900">
-            Directed PhD Thesis
-          </h2>
-          <span class="relative w-5 h-5 flex-shrink-0">
-            <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-          </span>
-        </summary>
-        <div class="mt-6 text-gray-700 space-y-6">
-          <ul id="phd-graduated-list" class="list-decimal list-inside space-y-4 text-sm">
-            <li class="text-gray-400 italic list-none">Loading students...</li>
-          </ul>
-        </div>
-      </details>
+      <div class="lg:col-span-3">
 
-    </div>
+        <section id="about" class="scroll-mt-12 mb-8">
+          <h2 class="text-2xl font-serif font-bold text-gray-900 mb-4">About</h2>
+          <div class="prose prose-brand max-w-none text-gray-700 font-light leading-relaxed">
+            <p>
+              Jesús Carretero is a Full Professor of Computer Architecture and Technology at Universidad Carlos III de
+              Madrid (Spain), where he is responsible for that knowledge area since 2000 and leader of the Computer
+              Architecture Research Group (ARCOS).
+            </p>
+            <p class="mt-4">
+              His research activity is centered on high-performance computing systems, large-scale distributed systems,
+              data-intensive computing, IoT and real-time systems. He was Action Chair of the IC1305 COST Action
+              "Network for Sustainable Ultrascale Computing Systems (NESUS)", and he is also currently coordinating
+              the ADMIRE EuroHPC project.
+            </p>
+          </div>
+        </section>
 
-    <a href="/members.html" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-600 mt-12 transition">
-      <i class="fa-solid fa-arrow-left"></i>
-      Back to Members
-    </a>
+        <div class="space-y-4">
+
+          <details id="research"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Research Interests</h2>
+              <span class="relative w-5 h-5 flex-shrink-0">
+                <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <ul class="list-disc list-inside space-y-2 text-sm">
+                <li>High-Performance Computing</li>
+                <li>Large-scale distributed systems</li>
+                <li>Data-intensive computing</li>
+                <li>IoT and real-time systems</li>
+              </ul>
+            </div>
+          </details>
+
+          <details id="publications"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Last Journals</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+
+            <div id="publications-list" class="mt-6 flex flex-col gap-4">
+              <p class="text-gray-400 italic">Loading publications...</p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+              <a href="/publications.html" class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                View all publications in ARCOS <i class="fa-solid fa-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </details>
+
+          <details id="projects"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Projects</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">List of projects...</p>
+            </div>
+          </details>
+
+          <details id="teaching"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Teaching & Other Activities</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">Teaching list...</p>
+            </div>
+          </details>
+
+          <details id="service"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Professional Service</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">Service list...</p>
+            </div>
+          </details>
+
+          <details id="phd-thesis"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">
+                Directed PhD Thesis
+              </h2>
+              <span class="relative w-5 h-5 flex-shrink-0">
+                <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
+              </span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-6">
+
+              <div class="mb-6">
+                <label for="filter-phd-year" class="block text-sm font-medium text-gray-700 mb-1">Filter by
+                  Year:</label>
+                <div class="flex items-center gap-3">
+                  <select id="filter-phd-year"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-brand-600 focus:border-brand-600 block w-full sm:w-64 p-2.5 transition appearance-none cursor-pointer">
+                    <option value="all">All Years</option>
+                  </select>
+
+                  <button id="clear-year-filter"
+                    class="hidden flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 hover:text-red-600 hover:border-red-200 transition"
+                    title="Clear filter">
+                    <i class="fa-solid fa-xmark"></i>
+                    <span class="hidden sm:inline">Clear</span>
+                  </button>
+                </div>
+              </div>
+
+              <ul id="phd-graduated-list" class="list-decimal list-inside space-y-4 text-sm">
+                <li class="text-gray-400 italic list-none" id="loading-msg">Loading students...</li>
+              </ul>
+
+              <p id="no-phd-results" class="hidden text-sm text-red-500 italic mt-4">
+                No thesis found for the selected criteria.
+              </p>
+
+            </div>
+          </details>
+
+          <a href="/members.html"
+            class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-600 mt-12 transition">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Members
+          </a>
 
   </main>
 
@@ -216,5 +302,7 @@
 </body>
 
 <script src="/profiles/scripts/phd-students-loader.js"></script>
+<script src="/profiles/scripts/menu.js"></script>
+<script src="/profiles/scripts/sections-loader.js"></script>
 
 </html>
