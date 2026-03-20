@@ -255,6 +255,15 @@
     "year": 2025,
     "type": "journal",
     "badge": "Jour",
+    "title": "OrbiFaaS: An orbital method to build Continuum Earth Observation Systems",
+    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J. L., & Carretero, J.",
+    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
+    "venue": "Future Generation Computer Systems, pp. 107992, North-Holland."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
     "title": "Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA Torres-Charles et al.",
     "authorsDisplay": "Torres-Charles, C. A., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
     "authorsData": "Torres-Charles, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
