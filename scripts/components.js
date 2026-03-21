@@ -54,10 +54,22 @@ function highlightActiveLink() {
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
+        if (!href) return;
+
+        // Detectamos si es un enlace del menú de celular 
+        // (tienen la clase flex-col para apilar el icono y el texto)
+        const isMobileLink = link.classList.contains('flex-col');
 
         // se limpian las clases de todos los enlaces
         link.classList.remove('text-brand-600', 'font-bold');
         link.classList.add('text-gray-600'); // Color apagado por defecto
+
+        // color inactivo según el tipo de menú
+        if (isMobileLink) {
+            link.classList.add('text-gray-500');
+        } else {
+            link.classList.add('text-gray-600');
+        }
         
         let isActive = false;
 
@@ -80,10 +92,16 @@ function highlightActiveLink() {
             }
         }
         
-        // Aplicamos el color resaltado al activo
+        // Aplicamos el color resaltado al elemento activo
         if (isActive) {
-            link.classList.add('text-brand-600', 'font-bold');
-            link.classList.remove('text-gray-600');
+            // Quitamos los grises
+            link.classList.remove('text-gray-500', 'text-gray-600');
+            // Ponemos el azul 
+            link.classList.add('text-brand-600');
+            // Solo aplicamos negrita si es el menú de escritorio
+            if (!isMobileLink) {
+                link.classList.add('font-bold');
+            }
         }
     });
 }
