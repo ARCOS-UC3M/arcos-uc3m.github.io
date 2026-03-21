@@ -1,11 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Cargar Navbar
-    // loadComponent("navbar-container", "navbar.html", () => {
-    //     highlightActiveLink(); // Callback para iluminar el enlace después de cargar
-    // });
+    // Cargar Navbar    
     loadNavbar("/navbar.html", () => {
-        highlightActiveLink();
+        highlightActiveLink(); // Callback para iluminar el enlace después de cargar
     });
 
     // Cargar Footer
@@ -39,8 +36,11 @@ function loadNavbar(filePath, callback) {
             return response.text();
         })
         .then(data => {
-            // Usa insertAdjacentHTML para inyectar el HTML antes del primer hijo (AT THE TOP)
+            // Usa insertAdjacentHTML para inyectar el HTML antes del primer hijo 
             body.insertAdjacentHTML('afterbegin', data);
+
+            // padding en body para que el footer no quede tapado por el menú en la versión de celuar
+            body.classList.add('pb-16', 'md:pb-0');
             if (callback) callback();
         })
         .catch(error => console.error(error));

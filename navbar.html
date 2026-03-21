@@ -1,15 +1,6 @@
-<nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+<!-- <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20">
-
-            <!-- <div class="flex items-center gap-3">
-                <a href="index.html">
-                    <img src="assets/uc3m.jpg" alt="UC3M Logo" style="max-width:170px; height: auto;" />
-                </a>
-                <a href="index.html">
-                    <img src="assets/arcos-no-name.png" alt="ARCOS Logo" style="max-width:170px; height: auto;" />
-                </a>
-            </div> -->
 
             <a href="/index.html" class="mt-4 block">
                 <div class="flex items-center gap-6">
@@ -22,7 +13,7 @@
                 </div>
             </a>
 
-            <div class="hidden md:flex items-center space-x-6 text-sm">
+            <div class="items-center space-x-6 text-sm">
                 <a href="/index.html"
                     class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">About</a>
                 <a href="/index.html#research"
@@ -38,4 +29,71 @@
             </div>
         </div>
     </div>
+</nav> -->
+
+<!-- Navigation bar at top for regular/big screens -->
+<nav class="bg-white shadow-sm sticky top-0 z-40 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+
+            <a href="/index.html" class="mt-4 block">
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <div>
+                        <img src="/assets/uc3m.jpg" alt="UC3M Logo" style="max-width:140px; height: auto;" class="sm:max-w-[170px]" />
+                    </div>
+                    <div>
+                        <img src="/assets/arcos-no-name.png" alt="ARCOS Logo" style="max-width:140px; height: auto;" class="sm:max-w-[170px]" />
+                    </div>
+                </div>
+            </a>
+            
+            <!-- hidden md:flex hides this menu on mobile screens -->
+            <div class="hidden md:flex items-center space-x-6 text-sm">
+                <a href="/index.html" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">About</a>
+                <a href="/index.html#research" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">Research</a>
+                <a href="/index.html#projects" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">Projects</a>
+                <a href="/members.html" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">Members</a>
+                <a href="/conferences.html" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">Conferences</a>
+                <a href="/publications.html" class="nav-link text-gray-600 hover:text-brand-600 font-medium transition">Publications</a>
+            </div>
+
+        </div>
+    </div>
 </nav>
+
+<!-- Navigation bottom bar for mobile version and tiny screens. -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]" style="padding-bottom: env(safe-area-inset-bottom);">
+    <div class="flex justify-around items-center h-16 px-1">
+        
+        <a href="/index.html" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-house text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">About</span>
+        </a>
+        
+        <a href="/index.html#research" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-microscope text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">Research</span>
+        </a>
+        
+        <a href="/index.html#projects" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-diagram-project text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">Projects</span>
+        </a>
+        
+        <a href="/members.html" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-users text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">Members</span>
+        </a>
+
+        <a href="/conferences.html" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-calendar-days text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">Confs</span>
+        </a>
+        
+        <a href="/publications.html" class="nav-link flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-brand-600">
+            <i class="fa-solid fa-book-open text-lg mb-1"></i>
+            <span class="text-[10px] font-medium">Pubs</span>
+        </a>
+
+    </div>
+</div>
