@@ -49,18 +49,44 @@ function loadNavbar(filePath, callback) {
 // Función para resaltar la página actual en el menú
 function highlightActiveLink() {
     const currentPath = window.location.pathname;
+    const currentHash = window.location.hash; // capturamos el hash de la sección
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        
-        // Lógica para detectar si estamos en esa página
-        const isActive = (currentPath.includes(href) && href !== 'index.html' && href !== '#') ||
-                         ((currentPath.endsWith('/') || currentPath.includes('index.html')) && href === 'index.html');
 
+        // se limpian las clases de todos los enlaces
+        link.classList.remove('text-brand-600', 'font-bold');
+        link.classList.add('text-gray-600'); // Color apagado por defecto
+        
+        let isActive = false;
+
+        // lógica para detectar si estamos en esa página o sección
+        if (href.includes('#')) {
+            // Es un enlace de sección (ej: /index.html#research)
+            const partes = href.split('#');
+            const linkPath = partes[0];
+            const linkHash = '#' + partes[1];
+            
+            const mismaPagina = currentPath.endsWith(linkPath) || (currentPath.endsWith('/') && linkPath === '/index.html');
+            isActive = mismaPagina && currentHash === linkHash;
+        } else {
+            // es un enlace de página normal (ej: /members.html o /index.html)
+            if (href === '/index.html' || href === '/') {
+                // Solo iluminar "About" si estamos en index y NO hay ninguna sección (#) seleccionada
+                isActive = (currentPath.endsWith('/') || currentPath.endsWith('index.html')) && currentHash === '';
+            } else {
+                isActive = currentPath.includes(href);
+            }
+        }
+        
+        // Aplicamos el color resaltado al activo
         if (isActive) {
             link.classList.add('text-brand-600', 'font-bold');
             link.classList.remove('text-gray-600');
         }
     });
 }
+// listener para que la función se ejecute automáticamente 
+// cuando navegamos entre secciones (#) de una misma página.
+window.addEventListener('hashchange', highlightActiveLink);
