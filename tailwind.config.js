@@ -1,7 +1,7 @@
 /* tailwind configuration file */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"], // busca las clases en todos tus HTML y JS
+  content: ["./**/*.{html,js}"], // busca las clases en todos los HTML y JS en todas las subcarpetas
   theme: {
     extend: {
       fontFamily: {
