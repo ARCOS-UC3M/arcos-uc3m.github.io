@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Construir la ruta dinámicamente
     const jsonPath = `/profiles/${member}/assets/phd-graduated.json`; // Usamos backticks (`) para insertar la variable
 
-    console.log("El valor de 'member' capturado de la URL es:", member);
+    // console.log("El valor de 'member' capturado de la URL es:", member);
 
     // Seleccionar el contenedor donde inyectaremos los datos
     const listContainer = document.getElementById('phd-graduated-list');

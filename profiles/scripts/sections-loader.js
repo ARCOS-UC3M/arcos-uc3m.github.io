@@ -1,46 +1,46 @@
 // CARGAR Y FILTRAR PUBLICACIONES (Últimos 10 Journals)
 async function loadPublications() {
-    const container = document.getElementById('publications-list');
+  const container = document.getElementById('publications-list');
 
-    const urlParams = new URLSearchParams(window.location.search);
-    // TODO: hacer genérico, member debería ser un ID no un nombre. El id debe estar además en publications.json para no depender del nombre.
-    //const member = urlParams.get('member');
+  const urlParams = new URLSearchParams(window.location.search);
+  // TODO: hacer genérico, member debería ser un ID no un nombre. El id debe estar además en publications.json para no depender del nombre.
+  //const member = urlParams.get('member');
 
-    const authorToSearch = window.PROFILE_CONFIG.searchName
-    // console.log("El valor de 'member' capturado de la URL es:", authorToSearch);
+  const authorToSearch = window.PROFILE_CONFIG.searchName
+  // console.log("El valor de 'member' capturado de la URL es:", authorToSearch);
 
-    try {
-        const response = await fetch('/publications.json');
-        if (!response.ok) throw new Error('Error al cargar publications.json');
+  try {
+    const response = await fetch('/publications.json');
+    if (!response.ok) throw new Error('Error al cargar publications.json');
 
-        const allPublications = await response.json();
+    const allPublications = await response.json();
 
-        // Filtrar: Solo 'journal' Y que contenga a 'Carretero' (en authorsDisplay o authorsData)
-        let filteredPubs = allPublications.filter(pub => {
-            const isJournal = pub.type === 'journal';
-            // Buscamos el nombre asegurándonos de que funcione independientemente de si incluye la inicial o no
-            const isAuthor = pub.authorsDisplay.includes(`${authorToSearch}`) || pub.authorsData.includes(`${authorToSearch}`);
+    // Filtrar: Solo 'journal' Y que contenga a 'Carretero' (en authorsDisplay o authorsData)
+    let filteredPubs = allPublications.filter(pub => {
+      const isJournal = pub.type === 'journal';
+      // Buscamos el nombre asegurándonos de que funcione independientemente de si incluye la inicial o no
+      const isAuthor = pub.authorsDisplay.includes(`${authorToSearch}`) || pub.authorsData.includes(`${authorToSearch}`);
 
-            return isJournal && isAuthor;
-        });
+      return isJournal && isAuthor;
+    });
 
-        // Ordenar: De más reciente a más antiguo por año
-        filteredPubs.sort((a, b) => b.year - a.year);
+    // Ordenar: De más reciente a más antiguo por año
+    filteredPubs.sort((a, b) => b.year - a.year);
 
-        // Limitar: Solo las 10 primeras
-        const top10Pubs = filteredPubs.slice(0, 10);
+    // Limitar: Solo las X primeras publicaciones
+    const top10Pubs = filteredPubs.slice(0, 5);
 
-        // Limpiar el mensaje de "Loading..."
-        container.innerHTML = '';
+    // Limpiar el mensaje de "Loading..."
+    container.innerHTML = '';
 
-        if (top10Pubs.length === 0) {
-            container.innerHTML = '<p class="text-gray-500 italic">No recent journal publications found.</p>';
-            return;
-        }
+    if (top10Pubs.length === 0) {
+      container.innerHTML = '<p class="text-gray-500 italic">No recent journal publications found.</p>';
+      return;
+    }
 
-        // Generar e inyectar el HTML para cada publicación (Estilo adaptado para el perfil)
-        top10Pubs.forEach(pub => {
-            const html = `
+    // Generar e inyectar el HTML para cada publicación (Estilo adaptado para el perfil)
+    top10Pubs.forEach(pub => {
+      const html = `
             <div class="p-5 rounded-lg border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-md hover:border-brand-200 transition-all">
               <div class="flex flex-col sm:flex-row sm:items-start gap-4">
                 
@@ -67,14 +67,43 @@ async function loadPublications() {
               </div>
             </div>
           `;
-            container.insertAdjacentHTML('beforeend', html);
-        });
+      container.insertAdjacentHTML('beforeend', html);
+    });
 
-    } catch (error) {
-        console.error("Error cargando las publicaciones del perfil:", error);
-        container.innerHTML = '<p class="text-red-500 italic text-sm">Error loading publications. Please try again later.</p>';
-    }
+  } catch (error) {
+    console.error("Error cargando las publicaciones del perfil:", error);
+    container.innerHTML = '<p class="text-red-500 italic text-sm">Error loading publications. Please try again later.</p>';
+  }
 }
+
+// Expandir todas las secciones.
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('toggle-all-btn');
+  // Seleccionamos todos los elementos <details> que están dentro del contenedor principal
+  const detailsElements = document.querySelectorAll('main details');
+  let allExpanded = false;
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      allExpanded = !allExpanded; // Cambiamos el estado
+
+      detailsElements.forEach(detail => {
+        if (allExpanded) {
+          detail.setAttribute('open', ''); // Expande
+        } else {
+          detail.removeAttribute('open'); // Colapsa
+        }
+      });
+
+      // Actualizamos el texto y el icono del botón según el estado
+      if (allExpanded) {
+        toggleBtn.innerHTML = '<i class="fa-solid fa-angles-up"></i><span>Collapse All</span>';
+      } else {
+        toggleBtn.innerHTML = '<i class="fa-solid fa-angles-down"></i><span>Expand All</span>';
+      }
+    });
+  }
+});
 
 // Ejecutar la función
 loadPublications();

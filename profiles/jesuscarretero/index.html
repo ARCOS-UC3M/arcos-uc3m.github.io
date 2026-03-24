@@ -7,10 +7,32 @@
 
   <title>Jesús Carretero Pérez - Profile | ARCOS Research Group</title>
 
-  <!-- <link rel="icon" type="image/png" href="/assets/favicon.png"> -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <link rel="stylesheet" href="/assets/tailwind/output.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 
+  <!-- Comment this on production -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              600: '#004e92', // Azul corporativo UC3M
+              800: '#003366',
+              900: '#00264d',
+            }
+          }
+        }
+      }
+    }
+  </script> -->
+  <!-- Uncomment and rebuild this on production -->
+  <link rel="stylesheet" href="/assets/tailwind/output.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;700&display=swap"
@@ -47,7 +69,7 @@
             Jesús Carretero Pérez
           </h1>
           <p class="text-xl text-gray-600 font-light mb-4">
-            Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (Spain)
+            Full Professor of Computer Architecture and Technology at Universidad Carlos III de Madrid (UC3M) in Spain
           </p>
           <p class="text-base text-gray-500 max-w-xl">
             Head of ARCOS Research Group.
@@ -69,14 +91,15 @@
 
             <div class="flex items-center gap-3 text-gray-600">
               <i class="fa-solid fa-location-dot w-6 text-center text-gray-500"></i>
-              <span>2.2.C09 (Leganés, Madrid, UC3M)</span>
+              <span>Edificio Sabatini, 2.2.C09 (Leganés, Madrid, UC3M)</span>
             </div>
 
             <a target="_blank"
               href="https://www.uc3m.es/ss/Satellite/DeptInformatica/es/DetallePersonalDept/1371330169378/idu-3791"
-              class="flex items-center gap-3 text-gray-600 hover:text-brand-600 transition group" title="UC3M Website">
+              class="flex items-center gap-3 text-gray-600 hover:text-brand-600 transition group"
+              title="Open the profile at UC3M website.">
               <i class="fa-solid fa-globe w-6 text-center text-gray-500 group-hover:text-brand-600 transition"></i>
-              <span class="group-hover:underline">UC3M Website</span>
+              <span class="group-hover:underline">UC3M Profile</span>
             </a>
           </div>
         </div>
@@ -110,11 +133,25 @@
             <a href="https://scholar.google.com/citations?user=kSQoV-sAAAAJ&hl=es"
               class="text-brand-600 hover:underline" target="_blank">Google Scholar</a>
           </li>
-          <li class="flex items-center gap-3 pt-2">
-            <i class="fa-solid fa-file-pdf text-gray-400 fa-lg"></i>
-            <a href="#" class="text-gray-600 hover:underline">Curriculum Vitae (PDF)</a>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-handshake text-brand-600 fa-lg"></i>
+            <a href="https://researchportal.uc3m.es/vis/author-network/inv16920" class="text-brand-600 hover:underline"
+              target="_blank">Cooperation</a>
           </li>
         </ul>
+        <!-- Logos ARCOS y UC3M -->
+        <div class="mt-8 pt-6 border-t border-gray-100 flex items-center justify-center gap-6">
+          <a href="https://www.uc3m.es/home" target="_blank" title="Open the UC3M website."
+            class="transition-transform hover:scale-105">
+            <img src="/assets/uc3m.jpg" alt="Universidad Carlos III de Madrid"
+              class="h-10 object-contain transition duration-300">
+          </a>
+          <a href="https://arcos-uc3m.github.io/" target="_blank" title="Open the ARCOS website."
+            class="transition-transform hover:scale-105">
+            <img src="/assets/arcos-2.png" alt="ARCOS Research Group"
+              class="h-8 object-contain transition duration-300">
+          </a>
+        </div>
       </aside>
 
     </section>
@@ -128,23 +165,21 @@
 
           <a href="#about"
             class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">About</a>
-          <a href="#research"
-            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Research
-            Interests</a>
           <a href="#publications"
-            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Last
-            Journals</a>
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Publications</a>
           <a href="#projects"
             class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Projects</a>
-          <a href="#teaching"
-            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Teaching
-            & Other</a>
-          <a href="#service"
-            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Professional
-            Service</a>
           <a href="#phd-thesis"
-            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Directed
-            PhD Thesis</a>
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">PhD
+            advisoring</a>
+          <a href="#conferences"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Conferences
+            and Keynotes</a>
+          <a href="#teaching"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Teaching</a>
+          <a href="#service"
+            class="sidebar-link text-sm text-gray-600 hover:text-brand-600 hover:border-brand-600 -ml-[18px] border-l-2 border-transparent pl-4 py-1.5 transition-all font-medium">Community
+            service</a>
         </nav>
       </aside>
 
@@ -152,45 +187,59 @@
 
         <section id="about" class="scroll-mt-12 mb-8">
           <h2 class="text-2xl font-serif font-bold text-gray-900 mb-4">About</h2>
-          <div class="prose prose-brand max-w-none text-gray-700 font-light leading-relaxed">
-            <p>
+          <div class="prose prose-brand max-w-none text-gray-700 font-light leading-relaxed text-justify">
+            <p class="mt-4">
               Jesús Carretero is a Full Professor of Computer Architecture and Technology at Universidad Carlos III de
-              Madrid (Spain), where he is responsible for that knowledge area since 2000 and leader of the Computer
+              Madrid (UC3M) in Spain, where he is responsible for that knowledge area since 2000 and leader of the
+              Computer
               Architecture Research Group (ARCOS).
+
+
+              My major research lines are High-Performance Computing, Large-scale distributed systems, Data-intensive
+              computing and storage, and IoT and real-time systems.
             </p>
             <p class="mt-4">
               His research activity is centered on high-performance computing systems, large-scale distributed systems,
-              data-intensive computing, IoT and real-time systems. He was Action Chair of the IC1305 COST Action
+              data-intensive computing, IoT and real-time systems. He has been coordinator of the EuroHPC project ADMIRE
+              and the Action Chair of the IC1305 COST Action
               "Network for Sustainable Ultrascale Computing Systems (NESUS)", and he is also currently coordinating
-              the ADMIRE EuroHPC project.
+              the <a href="https://admire-eurohpc.eu/" target="_blank" class="text-brand-600 font-bold hover:underline"
+                title="Open the ADMIRE project website.">ADMIRE</a> EuroHPC project.
+              <!-- <gregar enlace en Admire -->
             </p>
+            <p class="mt-4">
+              He is the director of the <a href="https://uc3m.es/cai/c3" target="_blank"
+                class="text-brand-600 font-bold hover:underline">UC3M Scientific Computing Center (C3).</a>
+            </p>
+            <p class="mt-4">
+              He is currently an area editor for Future Generation Computer Systems, IEEE Transactions on Parallel and
+              Distributed Systems, and ACM Computing Surveys
+            </p>
+          </div>
+          <div class="mt-2 text-right">
+            <a target="_blank"
+              href="https://www.dropbox.com/scl/fi/kue5xo0z4c110qhsq0cqh/Carretero_bio.pdf?rlkey=wnwq3wdeu3xzpgoaf8uoxrjle&st=k4p1wdt9&dl=0"
+              class="text-sm font-medium text-brand-600 hover:text-brand-800 transition"
+              title="Open full biography (PDF) in a new tab">
+              Read more <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+            </a>
           </div>
         </section>
 
-        <div class="space-y-4">
+        <div class="flex justify-end mb-4 border-t border-gray-100">
+          <button id="toggle-all-btn"
+            class="text-sm font-medium text-brand-600 hover:text-brand-800 transition flex items-center gap-2 px-4 py-2 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
+            <i class="fa-solid fa-angles-down"></i>
+            <span>Expand All</span>
+          </button>
+        </div>
 
-          <details id="research"
-            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
-            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-              <h2 class="text-2xl font-serif font-bold text-brand-900">Research Interests</h2>
-              <span class="relative w-5 h-5 flex-shrink-0">
-                <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
-              </span>
-            </summary>
-            <div class="mt-6 text-gray-700 space-y-4">
-              <ul class="list-disc list-inside space-y-2 text-sm">
-                <li>High-Performance Computing</li>
-                <li>Large-scale distributed systems</li>
-                <li>Data-intensive computing</li>
-                <li>IoT and real-time systems</li>
-              </ul>
-            </div>
-          </details>
+        <div class="space-y-4">
 
           <details id="publications"
             class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
             <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-              <h2 class="text-2xl font-serif font-bold text-brand-900">Last Journals</h2>
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Publications</h2>
               <span class="relative w-5 h-5 flex-shrink-0"><i
                   class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
             </summary>
@@ -200,8 +249,10 @@
             </div>
 
             <div class="mt-6 pt-4 border-t border-gray-100 text-right">
-              <a href="/publications.html" class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
-                View all publications in ARCOS <i class="fa-solid fa-arrow-right ml-1"></i>
+              <a target="_blank" href="https://researchportal.uc3m.es/display/inv16920?webuc3m=1&tab=publications"
+                class="text-sm font-medium text-brand-600 hover:text-brand-800 transition"
+                title="Open the UC3M Research Portal in a new tab">
+                View all publications <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
               </a>
             </div>
           </details>
@@ -214,31 +265,18 @@
                   class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
             </summary>
             <div class="mt-6 text-gray-700 space-y-4">
-              <p class="text-sm">List of projects...</p>
-            </div>
-          </details>
-
-          <details id="teaching"
-            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
-            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-              <h2 class="text-2xl font-serif font-bold text-brand-900">Teaching & Other Activities</h2>
-              <span class="relative w-5 h-5 flex-shrink-0"><i
-                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
-            </summary>
-            <div class="mt-6 text-gray-700 space-y-4">
-              <p class="text-sm">Teaching list...</p>
-            </div>
-          </details>
-
-          <details id="service"
-            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
-            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
-              <h2 class="text-2xl font-serif font-bold text-brand-900">Professional Service</h2>
-              <span class="relative w-5 h-5 flex-shrink-0"><i
-                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
-            </summary>
-            <div class="mt-6 text-gray-700 space-y-4">
-              <p class="text-sm">Service list...</p>
+              <!-- <p class="text-sm">List of projects...</p> -->
+              <!-- <iframe src="https://researchportal.uc3m.es/display/inv16920?webuc3m=1&tab=projects#show%20more%20content"></iframe> -->
+              I have worked as principal research on multiple national and international projects like ADMIRE, Expand,
+              SCIOT.
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank"
+                  href="https://researchportal.uc3m.es/display/inv16920?webuc3m=1&tab=projects#show%20more%20content"
+                  class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  View all projects <i class="fa-solid fa-arrow-up-right-from-square ml-1"
+                    title="Open the UC3M Research Portal in a new tab"></i>
+                </a>
+              </div>
             </div>
           </details>
 
@@ -246,7 +284,7 @@
             class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
             <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
               <h2 class="text-2xl font-serif font-bold text-brand-900">
-                Directed PhD Thesis
+                PhD advisoring
               </h2>
               <span class="relative w-5 h-5 flex-shrink-0">
                 <i class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i>
@@ -254,7 +292,7 @@
             </summary>
             <div class="mt-6 text-gray-700 space-y-6">
 
-              <div class="mb-6">
+              <!-- <div class="mb-6">
                 <label for="filter-phd-year" class="block text-sm font-medium text-gray-700 mb-1">Filter by
                   Year:</label>
                 <div class="flex items-center gap-3">
@@ -270,7 +308,7 @@
                     <span class="hidden sm:inline">Clear</span>
                   </button>
                 </div>
-              </div>
+              </div> -->
 
               <ul id="phd-graduated-list" class="list-decimal list-inside space-y-4 text-sm">
                 <li class="text-gray-400 italic list-none" id="loading-msg">Loading students...</li>
@@ -281,13 +319,116 @@
               </p>
 
             </div>
+            <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+              <a target="_blank"
+                href="https://e-archivo.uc3m.es/search?scope=cc71bb4c-3d65-4232-b37c-92f67466fdd9&query=carretero&spc.page=1&f.advisor=Carretero%20P%C3%A9rez,%20Jes%C3%BAs,equals&spc.sf=dc.date.issued&spc.sd=DESC"
+                class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                View all thesis <i class="fa-solid fa-arrow-up-right-from-square ml-1"
+                  title="Open the UC3M e-archivo in a new tab"></i>
+              </a>
+            </div>
           </details>
 
-          <a href="/members.html"
+          <details id="conferences"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Conferences and Keynotes</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <!-- Conferences organization -->
+            <!-- <h2 class="text-2xl font-serif text-brand-900"> -->
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">
+                I have organized at least 40 workshops and conferences, including major international events such as
+                IEEE HPCC, CCGrid, and EuroPar, often as General Chair. I will organize SBAC-PAD 2026 in Madrid.
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank"
+                  href="https://www.dropbox.com/scl/fi/py9yj23poxl657i9g1k34/CV_Carretero_conferences.pdf?rlkey=ou2ml7ip3v56leyjh548lgjks&st=ep4yyuly&dl=0"
+                  class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  Conferences organized <i class="fa-solid fa-arrow-up-right-from-square ml-1"
+                    title="Open full information (PDF) in a new tab."></i>
+                </a>
+              </div>
+            </div>
+            <!-- </h2> -->
+            <!-- Conferences organized</h2> -->
+            <!-- <div class="mt-6 text-gray-700 space-y-4">
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank"
+                  href="https://www.dropbox.com/scl/fi/6x9f6z96himgsnwgdu9c0/CV_Carretero_teaching.pdf?rlkey=uxz38wbijohdm5u1apjnremwz&st=jhea2w4g&dl=0"
+                  class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  Read more <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+              </div> -->
+            <!-- </div> -->
+            <!-- Inviter speakers -->
+            <!-- <div class="mt-6 text-gray-700 space-y-4">
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank"
+                  href="https://www.dropbox.com/scl/fi/6x9f6z96himgsnwgdu9c0/CV_Carretero_teaching.pdf?rlkey=uxz38wbijohdm5u1apjnremwz&st=jhea2w4g&dl=0"
+                  class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  Read more <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+              </div>
+            </div> -->
+            <!-- <h2 class="font-serif text-brand-900"> -->
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">
+                <!-- I have organized at least 40 workshops and conferences, including major international events such as IEEE HPCC, CCGrid, and EuroPar, often as General Chair. I will organize SBAC-PAD 2026 in Madrid. -->
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank" href="#" class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  Invited keynotes <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!-- </h2> -->
+          </details>
+
+          <details id="teaching"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Teaching</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">I have coordinated the Computer Architecture area at UC3M since 2001
+                and taught multiple undergraduate and master's courses in English. I am also the lead author of
+                the book “Operating Systems: An Applied Perspective”, currently in its third edition and widely
+                used in Spanish and Latin American universities</p>
+            </div>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <div class="mt-6 pt-4 border-t border-gray-100 text-right">
+                <a target="_blank"
+                  href="https://www.dropbox.com/scl/fi/6x9f6z96himgsnwgdu9c0/CV_Carretero_teaching.pdf?rlkey=uxz38wbijohdm5u1apjnremwz&st=jhea2w4g&dl=0"
+                  class="text-sm font-medium text-brand-600 hover:text-brand-800 transition">
+                  Read more <i class="fa-solid fa-arrow-up-right-from-square ml-1"
+                    title="Open full information (PDF) in a new tab."></i>
+                </a>
+              </div>
+            </div>
+          </details>
+
+          <details id="service"
+            class="group bg-white rounded-lg border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden scroll-mt-12">
+            <summary class="flex items-center justify-between gap-1.5 text-gray-900 cursor-pointer">
+              <h2 class="text-2xl font-serif font-bold text-brand-900">Community service</h2>
+              <span class="relative w-5 h-5 flex-shrink-0"><i
+                  class="fa-solid fa-chevron-down group-open:-rotate-180 text-gray-400 transition-transform"></i></span>
+            </summary>
+            <div class="mt-6 text-gray-700 space-y-4">
+              <p class="text-sm">Service list...</p>
+            </div>
+          </details>
+
+
+
+          <!-- <a href="/members.html"
             class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-brand-600 mt-12 transition">
             <i class="fa-solid fa-arrow-left"></i>
             Back to Members
-          </a>
+          </a> -->
 
   </main>
 
@@ -296,7 +437,7 @@
 </body>
 
 <script src="/profiles/scripts/phd-students-loader.js"></script>
-<script src="/profiles/scripts/menu.js"></script>
+<!-- <script src="/profiles/scripts/menu.js"></script> -->
 <script src="/profiles/scripts/sections-loader.js"></script>
 
 </html>
