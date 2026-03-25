@@ -1,9 +1,13 @@
-
+// Filtro para las tesis dirigidas.
 document.addEventListener('DOMContentLoaded', () => {
     const yearSelect = document.getElementById('filter-phd-year');
     const clearFilterBtn = document.getElementById('clear-year-filter');
     const phdList = document.getElementById('phd-graduated-list');
     const noResultsMsg = document.getElementById('no-phd-results');
+
+    if (!yearSelect) {
+        return;
+    }
 
     // Extraer años y rellenar el <select>
     function populateYearDropdown() {
@@ -72,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    if (!yearSelect) return;
+
     // Escuchar cambios en el selector
     yearSelect.addEventListener('change', (e) => {
         applyFilter(e.target.value);
@@ -96,6 +102,16 @@ sidebarLinks.forEach(link => {
         const targetId = link.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
+        // Devolvemos el estado de todos los enlaces.
+        sidebarLinks.forEach(l => {
+            l.classList.remove('text-brand-600', 'border-brand-600', 'font-bold');
+            l.classList.add('text-gray-600', 'border-transparent', 'font-medium');
+        });
+
+        // Iluminamos el enlace clickeado.
+        link.classList.remove('text-gray-600', 'border-transparent', 'font-medium');
+        link.classList.add('text-brand-600', 'border-brand-600', 'font-bold');                       
+
         // Efecto Acordeón: Cerramos todos los <details> EXCEPTO el que acabamos de clicar
         allDetails.forEach(details => {
             if (details.id !== targetId) {
@@ -118,6 +134,9 @@ const observerOptions = {
     threshold: 0
 };
 
+// Cambia el color de las opciones del borde izquierdo conforme se navega.
+// TOCHECK: si hay poco contenido o se colapsan todas las secciones no se marca el valor corrector por
+// que la navegaciójn lo va cambiando.
 const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         // Si la sección entra en el área visible que configuramos...
@@ -141,7 +160,7 @@ const scrollObserver = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Seleccionamos la sección 'About' y todos los '<details>' que tengan un ID, y los empezamos a vigilar
-const sectionsToObserve = document.querySelectorAll('section[id], details[id]');
-sectionsToObserve.forEach(section => {
-    scrollObserver.observe(section);
-});
+// const sectionsToObserve = document.querySelectorAll('section[id], details[id]');
+// sectionsToObserve.forEach(section => {
+//     scrollObserver.observe(section);
+// });
