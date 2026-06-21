@@ -1,12 +1,22 @@
 [
   {
-    "nombre": "Diana Elizabeth Carrizales Espinoza",
-    "titulo": "Continuous processing architectures for edge-fog-cloud environments",
-    "year": 2026
+    "nombre": "Lara Visuña Pérez",
+    "titulo": "Novel computational techniques for decision support through medical imaging",
+    "year": 2025
   },
   {
-    "nombre": "Diego Camarmas Alonso",
-    "titulo": "Adaptive data management in large-scale computing systems",
-    "year": 2026
+    "nombre": "Estefania Serrano López",
+    "titulo": "Novel high performance techniques for high definition computer aided tomography",
+    "year": 2018
+  },
+{
+    "nombre": "Francisco José Rodrigo Duro",
+    "titulo": "A generic I/O architecture for data-intensive applications based on in-memory distributed cache",
+    "year": 2016
+  },
+{
+    "nombre": "Pablo Llopis Sanmillán",
+    "titulo": "Enhancing the programmability and energy effciency of storage in HPC and virtualized environments",
+    "year": 2016
   }
 ]
