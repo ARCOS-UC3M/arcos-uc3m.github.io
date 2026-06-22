@@ -306,6 +306,96 @@
     "venue": "Proceedings of the SC'25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 2213–2224."
   },
   {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
+    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
+    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
+    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
+    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
+    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
+    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
+    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
+    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "HERCULES: A scalable and elastic ad-hoc file system for large-scale computing systems",
+    "authorsDisplay": "Sánchez-Gallegos, G., Petre, C., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Petre, Garcia-Blas, Carretero",
+    "venue": "Future Generation Computer Systems, pp. 108350, Elsevier."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Parallel and hierarchically-distributed shoreline alert model (SAM)",
+    "authorsDisplay": "De Vita, C. G., Mellone, G., Florio, A., Charles, C. A. T., Di Luccio, D., Lapegna, M., Benassai, G., Budillon, G., & Montella, R.",
+    "authorsData": "De Vita, Mellone, Florio, Charles, Di Luccio, Lapegna, Benassai, Budillon, Montella",
+    "venue": "2023 31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), pp. 109–113, IEEE."
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A high-performance, parallel, and hierarchically distributed model for coastal run-up events simulation and forecasting: D. Di Luccio et al.",
+    "authorsDisplay": "Di Luccio, D., De Vita, C. G., Florio, A., Mellone, G., Torres Charles, C. A., Benassai, G., & Montella, R.",
+    "authorsData": "Di Luccio, De Vita, Florio, Mellone, Torres Charles, Benassai, Montella",
+    "venue": "The Journal of Supercomputing, vol. 80(15), pp. 22748–22769, Springer US New York."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "OrbiFaaS: An orbital method to build Continuum Earth Observation Systems",
+    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J. L., & Carretero, J.",
+    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
+    "venue": "Future Generation Computer Systems, pp. 107992, North-Holland."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A-Flow: managing dataflows on the computing continuum using abstract communication channels",
+    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., & Carretero, J.",
+    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
+    "venue": "2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), pp. 237–247, IEEE."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
+    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Carretero",
+    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
+  },
+  {
     "year": 2022,
     "type": "journal",
     "badge": "Jour",
@@ -547,95 +637,5 @@
     "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
     "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
     "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
-    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
-    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
-    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
-    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
-    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
-    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
-    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
-    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
-    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
-  },
-  {
-    "year": 2026,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "HERCULES: A scalable and elastic ad-hoc file system for large-scale computing systems",
-    "authorsDisplay": "Sánchez-Gallegos, G., Petre, C., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Sánchez-Gallegos, Petre, Garcia-Blas, Carretero",
-    "venue": "Future Generation Computer Systems, pp. 108350, Elsevier."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
-    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Carretero",
-    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Parallel and hierarchically-distributed shoreline alert model (SAM)",
-    "authorsDisplay": "De Vita, C. G., Mellone, G., Florio, A., Charles, C. A. T., Di Luccio, D., Lapegna, M., Benassai, G., Budillon, G., & Montella, R.",
-    "authorsData": "De Vita, Mellone, Florio, Charles, Di Luccio, Lapegna, Benassai, Budillon, Montella",
-    "venue": "2023 31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP), pp. 109–113, IEEE."
-  },
-  {
-    "year": 2024,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "A high-performance, parallel, and hierarchically distributed model for coastal run-up events simulation and forecasting: D. Di Luccio et al.",
-    "authorsDisplay": "Di Luccio, D., De Vita, C. G., Florio, A., Mellone, G., Torres Charles, C. A., Benassai, G., & Montella, R.",
-    "authorsData": "Di Luccio, De Vita, Florio, Mellone, Torres Charles, Benassai, Montella",
-    "venue": "The Journal of Supercomputing, vol. 80(15), pp. 22748–22769, Springer US New York."
-  },
-  {
-    "year": 2026,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "OrbiFaaS: An orbital method to build Continuum Earth Observation Systems",
-    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J. L., & Carretero, J.",
-    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
-    "venue": "Future Generation Computer Systems, pp. 107992, North-Holland."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "A-Flow: managing dataflows on the computing continuum using abstract communication channels",
-    "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., & Carretero, J.",
-    "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
-    "venue": "2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), pp. 237–247, IEEE."
   }
 ]
