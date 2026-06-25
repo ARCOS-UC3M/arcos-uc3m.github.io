@@ -1,68 +1,5 @@
 [
   {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
-    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Carretero",
-    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
-    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
-    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
-    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
-    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
-    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
-    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
-    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
-    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
-    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
-  },
-  {
-    "year": 2026,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "HERCULES: A scalable and elastic ad-hoc file system for large-scale computing systems",
-    "authorsDisplay": "Sánchez-Gallegos, G., Petre, C., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Sánchez-Gallegos, Petre, Garcia-Blas, Carretero",
-    "venue": "Future Generation Computer Systems, pp. 108350, Elsevier."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
-    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
-    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
-    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
-  },
-  {
     "year": 2019,
     "type": "conference",
     "badge": "Conf",
@@ -372,6 +309,42 @@
     "year": 2023,
     "type": "conference",
     "badge": "Conf",
+    "title": "Hercules: Scalable and Network Portable In-Memory Ad-Hoc File System for Data-Centric and High-Performance Applications",
+    "authorsDisplay": "Garcia-Blas, J., Sanchez-Gallegos, G., Petre, C., Martinelli, A. R., Aldinucci, M., & Carretero, J.",
+    "authorsData": "Garcia-Blas, Sanchez-Gallegos, Petre, Martinelli, Aldinucci, Carretero",
+    "venue": "European Conference on Parallel Processing, pp. 679–693, Springer."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Malleable and Adaptive Ad-Hoc File System for Data Intensive Workloads in HPC Applications",
+    "authorsDisplay": "Sanchez-Gallegos, G., Garcia-Blas, J., Carretero, J., & Petre, I. C.",
+    "authorsData": "Sanchez-Gallegos, Garcia-Blas, Carretero, Petre",
+    "venue": "High Performance Computing: ISC High Performance 2023 International Workshops, Hamburg, Germany, May 21--25, 2023, Revised Selected Papers, vol. 13999, pp. 56, Springer Nature."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A comparative study of ad-hoc file systems for extreme scale computing",
+    "authorsDisplay": "Al-Maaitah, N. O., Garcia-Blas, J., Sanchez-Gallegos, G., Carretero, J., Vef, M., & Brinkmann, A.",
+    "authorsData": "Al-Maaitah, Garcia-Blas, Sanchez-Gallegos, Carretero, Vef, Brinkmann",
+    "venue": "Future Generation Computer Systems, pp. 107815, Elsevier."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "HERCULES: A scalable and elastic ad-hoc file system for large-scale computing systems",
+    "authorsDisplay": "Sánchez-Gallegos, G., Petre, C., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Sánchez-Gallegos, Petre, Garcia-Blas, Carretero",
+    "venue": "Future Generation Computer Systems, pp. 108350, Elsevier."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
     "title": "Parallel and hierarchically-distributed shoreline alert model (SAM)",
     "authorsDisplay": "De Vita, C. G., Mellone, G., Florio, A., Charles, C. A. T., Di Luccio, D., Lapegna, M., Benassai, G., Budillon, G., & Montella, R.",
     "authorsData": "De Vita, Mellone, Florio, Charles, Di Luccio, Lapegna, Benassai, Budillon, Montella",
@@ -403,6 +376,24 @@
     "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., & Carretero, J.",
     "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
     "venue": "2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), pp. 237–247, IEEE."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
+    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Carretero",
+    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
   },
   {
     "year": 2022,
@@ -639,39 +630,12 @@
     "venue": "The Journal of Supercomputing, vol. 81(16), pp. 1–42, Springer."
   },
   {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "A novel prediction model for combined computational and storage malleability",
-    "authorsDisplay": "Sanchez-Checa, P., Singh, D. E., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Sanchez-Checa, Singh, Garcia-Blas, Carretero",
-    "venue": "11th ACM Celebration of Women in Computing: womENcourage 2024."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "A transformer and data augmentation-based approach for propaganda identification and classification",
-    "authorsDisplay": "Sanchez-Checa, P., Gallego-Torres, L., Sanchez-Escudero, M. A., Petre, C., & Segura-Bedmar, I.",
-    "authorsData": "Sanchez-Checa, Gallego-Torres, Sanchez-Escudero, Petre, Segura-Bedmar",
-    "venue": "Proceedings of the Iberian languages evaluation forum (IberLEF 2024) co-located with the conference of the Spanish society for natural language processing (SEPLN 2024), Valladolid, Spain, vol. 3756, pp. 1-16, CEUR-WS.org."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Combining Malleability and Distributed Control Mechanisms to Reduce I/O Contention",
-    "authorsDisplay": "Sanchez-Checa, P., Garcia-Blas, J., Carretero, J., & Singh, D. E.",
-    "authorsData": "Sanchez-Checa, Garcia-Blas, Carretero, Singh",
-    "venue": "High Performance Computing, pp. 387-400, Springer Nature Switzerland."
-  },
-  {
     "year": 2025,
     "type": "journal",
     "badge": "Jour",
-    "title": "920-LEGIONELOSIS Y FENÓMENOS METEOROLÓGICOS EXTREMOS",
-    "authorsDisplay": "Chaves-Cordero, J., Gómez-Barroso, D., Expósito-Singh, D., & Sánchez-Checa, P.",
-    "authorsData": "Chaves-Cordero, Gómez-Barroso, Expósito-Singh, Sánchez-Checa",
-    "venue": "Gaceta Sanitaria, vol. 39(S2), pp. 106738, Elsevier BV."
+    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
+    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
+    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
+    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
   }
 ]
