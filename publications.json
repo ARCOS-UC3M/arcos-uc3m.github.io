@@ -1,5 +1,41 @@
 [
   {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A novel prediction model for combined computational and storage malleability",
+    "authorsDisplay": "Sanchez-Checa, P., Singh, D. E., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Sanchez-Checa, Singh, Garcia-Blas, Carretero",
+    "venue": "11th ACM Celebration of Women in Computing: womENcourage 2024."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A transformer and data augmentation-based approach for propaganda identification and classification",
+    "authorsDisplay": "Sanchez-Checa, P., Gallego-Torres, L., Sanchez-Escudero, M. A., Petre, C., & Segura-Bedmar, I.",
+    "authorsData": "Sanchez-Checa, Gallego-Torres, Sanchez-Escudero, Petre, Segura-Bedmar",
+    "venue": "Proceedings of the Iberian languages evaluation forum (IberLEF 2024) co-located with the conference of the Spanish society for natural language processing (SEPLN 2024), Valladolid, Spain, vol. 3756, pp. 1-16, CEUR-WS.org."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Combining Malleability and Distributed Control Mechanisms to Reduce I/O Contention",
+    "authorsDisplay": "Sanchez-Checa, P., Garcia-Blas, J., Carretero, J., & Singh, D. E.",
+    "authorsData": "Sanchez-Checa, Garcia-Blas, Carretero, Singh",
+    "venue": "High Performance Computing, pp. 387-400, Springer Nature Switzerland."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "920-LEGIONELOSIS Y FENÓMENOS METEOROLÓGICOS EXTREMOS",
+    "authorsDisplay": "Chaves-Cordero, J., Gómez-Barroso, D., Expósito-Singh, D., & Sánchez-Checa, P.",
+    "authorsData": "Chaves-Cordero, Gómez-Barroso, Expósito-Singh, Sánchez-Checa",
+    "venue": "Gaceta Sanitaria, vol. 39(S2), pp. 106738, Elsevier BV."
+  },
+  {
     "year": 2019,
     "type": "conference",
     "badge": "Conf",
