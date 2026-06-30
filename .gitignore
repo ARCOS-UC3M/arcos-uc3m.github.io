@@ -1,6 +1,6 @@
-old.html
-generate_publications/publications.json
-generate_publications/duplicates.json
+publications.json
+duplicates.json
+testduplicates.json
 # Archivos identifier
 *.Identifier
 # Archivos de log
