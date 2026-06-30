@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "year": 2023,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "A novel approach for large-scale environmental data partitioning on cloud and on-premises storage for compute continuum applications",
+      "authorsDisplay": "Mellone, G., De Vita, C. G., Sánchez-Gallegos, D. D., Sánchez-Gallegos, G., Torres-Charles, C. A., Garcia-Blas, J., Carretero Pérez, J., Gonzalez-Compean, J., & Laccetti, G.",
+      "authorsData": "Mellone, De Vita, Sánchez-Gallegos, Sánchez-Gallegos, Torres-Charles, Garcia-Blas, Carretero Pérez, Gonzalez-Compean, Laccetti",
+      "venue": "Concurrency and Computation: Practice and Experience, pp. e7893."
+    },
+    {
+      "year": 2023,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "A novel approach for large-scale environmental data partitioning on cloud and on-premises storage for compute continuum applications",
+      "authorsDisplay": "Mellone, G., De Vita, C. G., Sanchez-Gallegos, D. D., Sanchez-Gallegos, G., Torres-Charles, C. A., Garcia-Blas, J., Carretero Perez, J., Gonzalez-Compean, J., & Laccetti, G.",
+      "authorsData": "Mellone, De Vita, Sanchez-Gallegos, Sanchez-Gallegos, Torres-Charles, Garcia-Blas, Carretero Perez, Gonzalez-Compean, Laccetti",
+      "venue": "Concurrency and Computation: Practice and Experience, vol. 35(25), pp. e7893, Wiley Online Library."
+    }
+  ],
+  [
+    {
+      "year": 2022,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "SecMesh: An efficient information security method for stream processing in edge-fog-cloud",
+      "authorsDisplay": "Torres-Charles, C. A., Carrizales-Espinoza, D. E., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+      "authorsData": "Torres-Charles, Carrizales-Espinoza, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+      "venue": "Proceedings of the 2022 7th International Conference on Cloud Computing and Internet of Things, pp. 8–16."
+    },
+    {
+      "year": 2022,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "SecMesh: An efficient information security method for stream processing in edge-fog-cloud",
+      "authorsDisplay": "Torres-Charles, C. A., Carrizales-Espinoza, D. E., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+      "authorsData": "Torres-Charles, Carrizales-Espinoza, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+      "venue": "Proceedings of the 2022 7th International Conference on Cloud Computing and Internet of Things, pp. 8–16."
+    }
+  ],
+  [
+    {
+      "year": 2024,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "GeoNimbus: A serverless framework to build earth observation and environmental services",
+      "authorsDisplay": "Sánchez-Gallegos, D. D., Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C., Gonzalez-Compean, J., & Carretero, J.",
+      "authorsData": "Sánchez-Gallegos, Carrizales-Espinoza, Zequeira, Torres-Charles, Gonzalez-Compean, Carretero",
+      "venue": "European Conference on Parallel Processing, pp. 166–177, Springer Nature Switzerland Cham."
+    },
+    {
+      "year": 2024,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "GeoNimbus: A serverless framework to build earth observation and environmental services",
+      "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Zequeira, A., Torres-Charles, C., Gonzalez-Compean, J., & Carretero, J.",
+      "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Zequeira, Torres-Charles, Gonzalez-Compean, Carretero",
+      "venue": "European Conference on Parallel Processing, pp. 166–177, Springer Nature Switzerland Cham."
+    }
+  ],
+  [
+    {
+      "year": 2025,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "Xook-Flow: an abstract communication channel model for the data exchange in computing continuum",
+      "authorsDisplay": "Torres Charles, C. A., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Carretero, J., & Gonzalez-Compean, J. L.",
+      "authorsData": "Torres Charles, Sanchez-Gallegos, Carrizales-Espinoza, Carretero, Gonzalez-Compean",
+      "venue": "Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing, pp. 243–244."
+    },
+    {
+      "year": 2025,
+      "type": "conference",
+      "badge": "Conf",
+      "title": "Xook-Flow: an abstract communication channel model for the data exchange in computing continuum",
+      "authorsDisplay": "Torres Charles, C. A., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Carretero, J., & Gonzalez-Compean, J. L.",
+      "authorsData": "Torres Charles, Sanchez-Gallegos, Carrizales-Espinoza, Carretero, Gonzalez-Compean",
+      "venue": "Proceedings of the 40th ACM/SIGAPP Symposium on Applied Computing, pp. 243–244."
+    }
+  ],
+  [
+    {
+      "year": 2025,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA Torres-Charles et al.",
+      "authorsDisplay": "Torres-Charles, C. A., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+      "authorsData": "Torres-Charles, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+      "venue": "Cluster Computing, vol. 28(14), pp. 889, Springer US New York."
+    },
+    {
+      "year": 2025,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "Xook-Sec: A policy-as-code framework for secure data-sharing on the computing continuum: CA Torres-Charles et al.",
+      "authorsDisplay": "Torres-Charles, C. A., Sanchez-Gallegos, D. D., Gonzalez-Compean, J., Morales-Sandoval, M., & Carretero, J.",
+      "authorsData": "Torres-Charles, Sanchez-Gallegos, Gonzalez-Compean, Morales-Sandoval, Carretero",
+      "venue": "Cluster Computing, vol. 28(14), pp. 889, Springer US New York."
+    }
+  ],
+  [
+    {
+      "year": 2025,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "Smart Cities: A Systematic Review of Emerging Technologies.",
+      "authorsDisplay": "Sanchez-Gallegos, D. D., Carrizales-Espinoza, D. E., Torres-Charles, C., & Carretero, J.",
+      "authorsData": "Sanchez-Gallegos, Carrizales-Espinoza, Torres-Charles, Carretero",
+      "venue": "Smart Cities (2624-6511), vol. 8(5)."
+    },
+    {
+      "year": 2025,
+      "type": "journal",
+      "badge": "Jour",
+      "title": "Smart cities: A systematic review of emerging technologies",
+      "authorsDisplay": "Sanchez Gallegos, D. D., Carrizales Espinoza, D., Torres Charles, C. A., & Carretero Perez, J.",
+      "authorsData": "Sanchez Gallegos, Carrizales Espinoza, Torres Charles, Carretero Perez",
+      "venue": "MDPI."
+    }
+  ]
+]
