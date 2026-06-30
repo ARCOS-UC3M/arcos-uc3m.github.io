@@ -1,0 +1,3 @@
+[submodule "profiles/paulasan-web"]
+	path = profiles/paulasan-web
+	url = https://github.com/paula-sanchez/paula-sanchez.github.io.git
