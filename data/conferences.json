@@ -1,0 +1,125 @@
+[
+  {
+    "id": "sbac-pad-2026",
+    "year": 2026,
+    "title": "SBAC-PAD",
+    "description": "38th IEEE/SBC Symposium on Computer Architecture and High Performance Computing",
+    "url": "https://coco-arcos.github.io/sbac-pad2026/",
+    "deadline": "2026-10-14T00:00:00Z",
+    "cfpDeadline": "2026-06-07T00:00:00Z"
+  },
+  {
+    "id": "jornadas-sarteco-2026",
+    "year": 2026,
+    "title": "Jornadas Sarteco",
+    "description": "Sociedad de Arquitectura y Tecnología de Computadores",
+    "url": "https://jornadassarteco.org",
+    "deadline": "2026-06-15T00:00:00Z",
+    "cfpDeadline": "2026-04-15T00:00:00Z"
+  },
+  {
+    "id": "euro-par-2024",
+    "year": 2024,
+    "title": "Euro-Par 2024",
+    "description": "30th International European Conference on Parallel and Distributed Computing",
+    "url": "https://2024.euro-par.org",
+    "deadline": "2024-08-30T00:00:00Z",
+    "cfpDeadline": "2024-02-28T00:00:00Z"
+  },
+  {
+    "id": "repara-2017",
+    "year": 2017,
+    "title": "REPARA",
+    "url": "#",
+    "deadline": "2017-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "kdcloudapps-2017",
+    "year": 2017,
+    "title": "KDCloudApps",
+    "url": "#",
+    "deadline": "2017-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "esaa-2017",
+    "year": 2017,
+    "title": "ESAA",
+    "url": "#",
+    "deadline": "2017-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "ccgrid-2017",
+    "year": 2017,
+    "title": "CCGrid",
+    "url": "#",
+    "deadline": "2017-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "ica3pp-2016",
+    "year": 2016,
+    "title": "ICA3PP",
+    "url": "#",
+    "deadline": "2016-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "css-2016",
+    "year": 2016,
+    "title": "CSS",
+    "url": "#",
+    "deadline": "2016-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "iucc-2016",
+    "year": 2016,
+    "title": "IUCC",
+    "url": "#",
+    "deadline": "2016-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "repara-2016",
+    "year": 2016,
+    "title": "REPARA",
+    "url": "#",
+    "deadline": "2016-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "esaa-2014",
+    "year": 2014,
+    "title": "ESAA",
+    "url": "#",
+    "deadline": "2014-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "eurompi-2013",
+    "year": 2013,
+    "title": "EUROMPI",
+    "url": "#",
+    "deadline": "2013-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "ispa-2012",
+    "year": 2012,
+    "title": "ISPA",
+    "url": "#",
+    "deadline": "2012-12-31T00:00:00Z",
+    "isSimple": true
+  },
+  {
+    "id": "mue-2012",
+    "year": 2012,
+    "title": "MUE",
+    "url": "#",
+    "deadline": "2012-12-31T00:00:00Z",
+    "isSimple": true
+  }
+]

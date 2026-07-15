@@ -1,0 +1,27 @@
+name: Validate Conference Data
+
+on:
+  push:
+    paths:
+      - 'data/conferences.json'
+  pull_request:
+    paths:
+      - 'data/conferences.json'
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # No dependency installation step needed since the script uses standard libraries
+      
+      - name: Run Schema Validator
+        run: python .github/scripts/validate_conferences.py
