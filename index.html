@@ -16,7 +16,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script src="scripts/components.js"></script>
+  <script src="scripts/components.js" defer></script>
+  <!-- Script to load the dynamic events on the homepage -->
+  <script src="scripts/index-events.js" defer></script>
 </head>
 
 <body id="page-body" class="bg-gray-50 text-gray-800 font-sans antialiased">
@@ -356,27 +358,13 @@
     </div>
   </section>
 
-  <section class="bg-brand-900 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="text-white">
-        <h3 class="text-2xl font-bold mb-2">Upcoming Conferences</h3>
-        <p class="text-brand-100">SBAC-PAD 2026 & Jornadas Sarteco 2026</p>
-      </div>
-      <div class="flex gap-4">
-        <a target="_blank" href="https://coco-arcos.github.io/sbac-pad2026/"
-          class="px-5 py-2 bg-white text-brand-900 font-bold rounded shadow hover:bg-gray-100 transition">
-          SBAC-PAD Info
-        </a>
-        <a target="_blank" href="https://jornadassarteco.org"
-          class="px-5 py-2 border border-white text-white font-medium rounded hover:bg-brand-800 transition">
-          Jornadas Sarteco
-        </a>
-      </div>
+  <!-- Dynamic Upcoming Events Section -->
+  <section id="upcoming-events-section" class="bg-brand-900 py-12" aria-hidden="true" style="display: none;">
+    <div id="index-upcoming-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <!-- Content injected by index-events.js -->
     </div>
   </section>
 
   <div id="footer-container"></div>
-
 </body>
-
 </html>
