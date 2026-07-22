@@ -1,5 +1,41 @@
 [
   {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A novel prediction model for combined computational and storage malleability",
+    "authorsDisplay": "Sanchez-Checa, P., Singh, D. E., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Sanchez-Checa, Singh, Garcia-Blas, Carretero",
+    "venue": "11th ACM Celebration of Women in Computing: womENcourage 2024."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A transformer and data augmentation-based approach for propaganda identification and classification",
+    "authorsDisplay": "Sanchez-Checa, P., Gallego-Torres, L., Sanchez-Escudero, M. A., Petre, C., & Segura-Bedmar, I.",
+    "authorsData": "Sanchez-Checa, Gallego-Torres, Sanchez-Escudero, Petre, Segura-Bedmar",
+    "venue": "Proceedings of the Iberian languages evaluation forum (IberLEF 2024) co-located with the conference of the Spanish society for natural language processing (SEPLN 2024), Valladolid, Spain, vol. 3756, pp. 1-16, CEUR-WS.org."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Combining Malleability and Distributed Control Mechanisms to Reduce I/O Contention",
+    "authorsDisplay": "Sanchez-Checa, P., Garcia-Blas, J., Carretero, J., & Singh, D. E.",
+    "authorsData": "Sanchez-Checa, Garcia-Blas, Carretero, Singh",
+    "venue": "High Performance Computing, pp. 387-400, Springer Nature Switzerland."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "920-LEGIONELOSIS Y FENÓMENOS METEOROLÓGICOS EXTREMOS",
+    "authorsDisplay": "Chaves-Cordero, J., Gómez-Barroso, D., Expósito-Singh, D., & Sánchez-Checa, P.",
+    "authorsData": "Chaves-Cordero, Gómez-Barroso, Expósito-Singh, Sánchez-Checa",
+    "venue": "Gaceta Sanitaria, vol. 39(S2), pp. 106738, Elsevier BV."
+  },
+  {
     "year": 2019,
     "type": "conference",
     "badge": "Conf",
@@ -306,249 +342,6 @@
     "venue": "Proceedings of the SC'25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 2213–2224."
   },
   {
-    "year": 2022,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "On the continuous contract verification using blockchain and real-time data",
-    "authorsDisplay": "Martinez-Rendon, C., Camarmas-Alonso, D., Carretero, J., & Gonzalez-Compean, J. L.",
-    "authorsData": "Martinez-Rendon, Camarmas-Alonso, Carretero, Gonzalez-Compean",
-    "venue": "Cluster Computing, vol. 25(3), pp. 2179–2201, Springer US New York."
-  },
-  {
-    "year": 2021,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "CREATOR: Simulador didáctico y genérico para la programación en ensamblador",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Del-Pozo-Punal, E., & Mateos, A. C.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Del-Pozo-Punal, Mateos",
-    "venue": "XXXI Jornadas de Paralelismo (JP20/21)."
-  },
-  {
-    "year": 2021,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "A new generic simulator for the teaching of assembly programming",
-    "authorsDisplay": "Camarmas-Alonso, D., Garc'ia-Carballeira, F., Del-Pozo-Puñal, E., & Mateos, A. C.",
-    "authorsData": "Camarmas-Alonso, Garc'ia-Carballeira, Del-Pozo-Puñal, Mateos",
-    "venue": "2021 XLVII Latin American Computing Conference (CLEI), pp. 1–9, IEEE."
-  },
-  {
-    "year": 2023,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "A scalable simulator for cloud, fog and edge computing platforms with mobility support",
-    "authorsDisplay": "Del-Pozo-Puñal, E., Garc'ia-Carballeira, F., & Camarmas-Alonso, D.",
-    "authorsData": "Del-Pozo-Puñal, Garc'ia-Carballeira, Camarmas-Alonso",
-    "venue": "Future Generation Computer Systems, vol. 144, pp. 117–130, North-Holland."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "A new Ad-Hoc parallel file system for HPC environments based on the Expand parallel file system",
-    "authorsDisplay": "Garcia-Carballeira, F., Camarmas-Alonso, D., Caderon-Mateos, A., & Carretero, J.",
-    "authorsData": "Garcia-Carballeira, Camarmas-Alonso, Caderon-Mateos, Carretero",
-    "venue": "2023 22nd International Symposium on Parallel and Distributed Computing (ISPDC), pp. 69–76, IEEE."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Evaluación de rendimiento del sistema de ficheros paralelo Expand Ad-Hoc en MareNostrum 4",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Carretero, J.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Carretero",
-    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Integración del simulador CREATOR con hardware RISC-V: caso de estudio con microcontrolador ESP32",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Del-Pozo-Punal, E.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Del-Pozo-Punal",
-    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
-  },
-  {
-    "year": 2022,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Mateos, A. C., & Pérez, J. C.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Mateos, Pérez",
-    "venue": "XXXII Jornadas de Paralelismo (JP22)."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Sistema de Ficheros Distribuido para IoT basado en Expand",
-    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
-    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
-    "venue": "XXXIII Jornadas de Paralelismo (JP2023)."
-  },
-  {
-    "year": 2022,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Una propuesta para el uso de dispositivos móviles en SimGrid: Aplicación a las simulaciones de IoT",
-    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., & Camarmas-Alonso, D.",
-    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso",
-    "venue": "XXXII Jornadas de Paralelismo (JP22)."
-  },
-  {
-    "year": 2024,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "CREATOR: An Educational Integrated Development Environment for RISC-V Programming",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & del-Pozo-Puñal, E.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, del-Pozo-Puñal",
-    "venue": "IEEE Access, vol. 12, pp. 127702–127717, IEEE."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Servicio de laboratorio remoto para la integración del simulador CREATOR con hardware RISC-V",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Del-Pozo-Punal, E.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Del-Pozo-Punal",
-    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Evaluación del rendimiento de un sistema de ficheros para sistemas IoT",
-    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
-    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
-    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Tolerancia a fallos en el sistema de ficheros paralelo Expand Ad-Hoc",
-    "authorsDisplay": "Munoz-Munoz, D., Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., & Carretero, J.",
-    "authorsData": "Munoz-Munoz, Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Carretero",
-    "venue": "XXXIV Jornadas de Paralelismo (JP2024)."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Fault Tolerant in the Expand Ad-Hoc Parallel File System",
-    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
-    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
-    "venue": "European Conference on Parallel Processing, pp. 62–76, Springer."
-  },
-  {
-    "year": 2026,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Hierarchical and distributed data storage for computing continuum",
-    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
-    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
-    "venue": "Future Generation Computer Systems, vol. 174, pp. 107931, North-Holland."
-  },
-  {
-    "year": 2024,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Malleability in the Expand Ad-Hoc Parallel File System",
-    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
-    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
-    "venue": "European Conference on Parallel Processing, pp. 322–333, Springer Nature Switzerland Cham."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "LFI: una libreria de comunicaciones tolerante a fallos para redes de alto rendimiento",
-    "authorsDisplay": "Munoz-Munoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
-    "authorsData": "Munoz-Munoz, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Sistema de almacenamiento para computing continuum: aplicación a sistemas de información ferroviaria",
-    "authorsDisplay": "Del-Pozo-Puñal, E., Garc'ia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
-    "authorsData": "Del-Pozo-Puñal, Garc'ia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Optimización de entornos de Big Data Analytics mediante sistemas de ficheros paralelos Ad-hoc",
-    "authorsDisplay": "Sotodosos-Morales, G., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderón-Mateos, A., Munoz-Munoz, D., & Carretero, J.",
-    "authorsData": "Sotodosos-Morales, Garcia-Carballeira, Camarmas-Alonso, Calderón-Mateos, Munoz-Munoz, Carretero",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Simulador web para RISC-V basado en la especificación SAIL",
-    "authorsDisplay": "Cano-Resa, J. C., Garc'ia-Carballeira, F., Camarmas-Alonso, D., & Calderón-Mateos, A.",
-    "authorsData": "Cano-Resa, Garc'ia-Carballeira, Camarmas-Alonso, Calderón-Mateos",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Extensión del simulador CREATOR para integrar funcionalidades de Arduino: caso de estudio con el microcontrolador ESP32",
-    "authorsDisplay": "Utrilla-Arroyo, E., Camarmas-Alonso, D., Garc'ia-Carballeira, F., & Calderón-Mateos, A.",
-    "authorsData": "Utrilla-Arroyo, Camarmas-Alonso, Garc'ia-Carballeira, Calderón-Mateos",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Evaluación del sistema de ficheros Expand Ad-Hoc con aplicaciones de uso intensivo de datos",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderón-Mateos, A., Munoz-Munoz, D., & Carretero, J.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderón-Mateos, Munoz-Munoz, Carretero",
-    "venue": "XXXV Jornadas de Paralelismo (JP25)."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Malleability and fault tolerance in ad-hoc parallel file systems",
-    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
-    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
-    "venue": "Cluster Computing, vol. 28(13), pp. 860, Springer."
-  },
-  {
-    "year": 2023,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "ENIGMA: A Scalable Simulator for IoT and Edge Computing",
-    "authorsDisplay": "Del-Pozo-Punal, E., Garcia-Carballeira, F., & Camarmas-Alonso, D.",
-    "authorsData": "Del-Pozo-Punal, Garcia-Carballeira, Camarmas-Alonso",
-    "venue": "31st Euromicro International Conference on Parallel, Distributed, and Network-Based Processing."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Improving I/O performance in HPC environments using the Expand Ad-Hoc file system",
-    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Carretero, J.",
-    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Carretero",
-    "venue": "The Journal of Supercomputing, vol. 81(16), pp. 1–42, Springer."
-  },
-  {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
-    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
-    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
-    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
-  },
-  {
     "year": 2023,
     "type": "conference",
     "badge": "Conf",
@@ -585,24 +378,6 @@
     "venue": "Future Generation Computer Systems, pp. 108350, Elsevier."
   },
   {
-    "year": 2025,
-    "type": "journal",
-    "badge": "Jour",
-    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
-    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
-  },
-  {
-    "year": 2025,
-    "type": "conference",
-    "badge": "Conf",
-    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
-    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
-    "authorsData": "Visuña, Garcia-Blas, Carretero",
-    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
-  },
-  {
     "year": 2023,
     "type": "conference",
     "badge": "Conf",
@@ -637,5 +412,347 @@
     "authorsDisplay": "Torres-Charles, C., Sanchez-Gallegos, D. D., Carrizales-Espinoza, D., Gonzalez-Compean, J., & Carretero, J.",
     "authorsData": "Torres-Charles, Sanchez-Gallegos, Carrizales-Espinoza, Gonzalez-Compean, Carretero",
     "venue": "2025 IEEE/SBC 37th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), pp. 237–247, IEEE."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Automated monitoring of Mycobacterium population growth in time-lapse microscopy with Deep Learning pseudo-supervised algorithm",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., Ferrer-Bazaga, S., Lopez-Exposito, P., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Ferrer-Bazaga, Lopez-Exposito, Carretero",
+    "venue": "Engineering Applications of Artificial Intelligence, vol. 162, pp. 112503, Elsevier."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Detection of Active and Latent Tuberculosis with Explainable Deep Learning Ensembles",
+    "authorsDisplay": "Visuña, L., Garcia-Blas, J., & Carretero, J.",
+    "authorsData": "Visuña, Garcia-Blas, Carretero",
+    "venue": "2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS), pp. 599–604, IEEE."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "CREATOR: An integrated development environment for programming assembly in RISC-V architectures",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., Del-Pozo-Puñal, E., Cano-Resa, J. C., & Utrilla-Arroyo, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Del-Pozo-Puñal, Cano-Resa, Utrilla-Arroyo",
+    "venue": "SoftwareX, vol. 35, pp. 102792, Elsevier BV."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "LFI: a communication library for high-performance networks",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "Cluster Computing, vol. 29(7), Springer Science and Business Media LLC."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "CREATOR-Sail: A RISC-V web simulator based on Sail ISA specification",
+    "authorsDisplay": "Cano-Resa, J. C., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Cano-Resa, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "Journal of Systems Architecture, vol. 176, pp. 103809, Elsevier BV."
+  },
+  {
+    "year": 2026,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Checkpointing transparente en aplicaciones que utilizan sistemas de ficheros ad-hoc",
+    "authorsDisplay": "Muñoz Muñoz, D., Garcia Carballeira, F., Calderon Mateos, A., Camarmas Alonso, D., & Carretero, J.",
+    "authorsData": "Muñoz Muñoz, Garcia Carballeira, Calderon Mateos, Camarmas Alonso, Carretero",
+    "venue": "XXXVI Jornadas de Paralelismo (JP26), Zenodo."
+  },
+  {
+    "year": 2026,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Entorno para el modelado y simulación de sistemas electrónicos digitales",
+    "authorsDisplay": "Verde Jimenez, J. A., Guerrero Espinosa, A., Camarmas Alonso, D., Garcia Carballeira, F., & Calderon Mateos, A.",
+    "authorsData": "Verde Jimenez, Guerrero Espinosa, Camarmas Alonso, Garcia Carballeira, Calderon Mateos",
+    "venue": "XXXVI Jornadas de Paralelismo (JP26), Zenodo."
+  },
+  {
+    "year": 2026,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Securizando el sistema de ficheros Expand utilizando blockchain",
+    "authorsDisplay": "Camarmas Alonso, D., Garcia Carballeira, F., Calderon Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas Alonso, Garcia Carballeira, Calderon Mateos, Carretero",
+    "venue": "XXXVI Jornadas de Paralelismo (JP26), Zenodo."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Expand: An ad-hoc file system for parallel and distributed environments",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., Del-Pozo-Puñal, E., Muñoz-Muñoz, D., Sotodosos-Morales, G., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Del-Pozo-Puñal, Muñoz-Muñoz, Sotodosos-Morales, Carretero",
+    "venue": "SoftwareX, vol. 34, pp. 102691, Elsevier BV."
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Hierarchical and distributed data storage for computing continuum",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "Future Generation Computer Systems, vol. 174, pp. 107931, Elsevier BV."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Improving I/O performance in HPC environments using the Expand Ad-Hoc file system",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Carretero",
+    "venue": "The Journal of Supercomputing, vol. 81(16), Springer Science and Business Media LLC."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Malleability and fault tolerance in ad-hoc parallel file systems",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "Cluster Computing, vol. 28(13), Springer Science and Business Media LLC."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación del sistema de ficheros Expand Ad-Hoc con aplicaciones de uso intensivo de datos",
+    "authorsDisplay": "Camarmas Alonso, D., Garcia Carballeira, F., Calderon Mateos, A., Muñoz Muñoz, D., & Carretero, J.",
+    "authorsData": "Camarmas Alonso, Garcia Carballeira, Calderon Mateos, Muñoz Muñoz, Carretero",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Extensión del simulador CREATOR para integrar funcionalidades de Arduino: caso de estudio con el microcontrolador ESP32",
+    "authorsDisplay": "Utrilla Arroyo, E., Camarmas Alonso, D., Garcia Carballeira, F., & Calderon Mateos, A.",
+    "authorsData": "Utrilla Arroyo, Camarmas Alonso, Garcia Carballeira, Calderon Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "LFI: una librería de comunicaciones tolerante a fallos para redes de alto rendimiento",
+    "authorsDisplay": "Muñoz Muñoz, D., Garcia Carballeira, F., Camarmas Alonso, D., & Calderon Mateos, A.",
+    "authorsData": "Muñoz Muñoz, Garcia Carballeira, Camarmas Alonso, Calderon Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Optimización de entornos de Big Data Analytics mediante sistemas de ficheros paralelos Ad-hoc",
+    "authorsDisplay": "Sotodosos Morales, G., Garcia Carballeira, F., Camarmas Alonso, D., Calderon Mateos, A., Muñoz Muñoz, D., & Carretero, J.",
+    "authorsData": "Sotodosos Morales, Garcia Carballeira, Camarmas Alonso, Calderon Mateos, Muñoz Muñoz, Carretero",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Simulador web para RISC-V basado en la especificación SAIL",
+    "authorsDisplay": "Cano Resa, J. C., Garcia Carballeira, F., Camarmas Alonso, D., & Calderon Mateos, A.",
+    "authorsData": "Cano Resa, Garcia Carballeira, Camarmas Alonso, Calderon Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de almacenamiento para computing continuum: aplicación a sistemas de información ferroviaria",
+    "authorsDisplay": "Del Pozo Puñal, E., Garcia Carballeira, F., Camarmas Alonso, D., & Calderon Mateos, A.",
+    "authorsData": "Del Pozo Puñal, Garcia Carballeira, Camarmas Alonso, Calderon Mateos",
+    "venue": "XXXV Jornadas de Paralelismo (JP25), Zenodo."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "ENIGMA: A Scalable Simulator for IoT and Edge Computing",
+    "authorsDisplay": "Del Pozo Puñal, E., Garcia-Carballeira, F., & Camarmas Alonso, D.",
+    "authorsData": "Del Pozo Puñal, Garcia-Carballeira, Camarmas Alonso",
+    "venue": "31st Euromicro International Conference on Parallel, Distributed, and Network-Based Processing, Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "inbook",
+    "badge": "Inbo",
+    "title": "Malleability in the Expand Ad-Hoc Parallel File System",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "Euro-Par 2024: Parallel Processing Workshops, pp. 322–333, Springer Nature Switzerland."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación del rendimiento de un sistema de ficheros para sistemas IoT",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "XXXIV Jornadas de Paralelismo (JP24), Zenodo."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Tolerancia a fallos en el sistema de ficheros paralelo Expand Ad-Hoc",
+    "authorsDisplay": "Muñoz-Muñoz, D., Camarmas Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Camarmas Alonso, Garcia-Carballeira, Calderon-Mateos, Carretero",
+    "venue": "XXXIV Jornadas de Paralelismo (JP24), Zenodo."
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Servicio de laboratorio remoto para la integración del simulador CREATOR con hardware RISC-V",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Del-Pozo-Puñal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Del-Pozo-Puñal",
+    "venue": "XXXIV Jornadas de Paralelismo (JP24), Zenodo."
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "CREATOR: An Educational Integrated Development Environment for RISC-V Programming",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & del-Pozo-Puñal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, del-Pozo-Puñal",
+    "venue": "IEEE Access."
+  },
+  {
+    "year": 2024,
+    "type": "inbook",
+    "badge": "Inbo",
+    "title": "Fault Tolerant in the Expand Ad-Hoc Parallel File System",
+    "authorsDisplay": "Muñoz-Muñoz, D., Garcia-Carballeira, F., Camarmas-Alonso, D., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Muñoz-Muñoz, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos, Carretero",
+    "venue": "Euro-Par 2024: Parallel Processing, pp. 62–76, Springer Nature Switzerland."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Evaluación de rendimiento del sistema de ficheros paralelo Expand Ad-Hoc en MareNostrum 4",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Carretero",
+    "venue": "XXXIII Jornadas de Paralelismo (JP23), Zenodo."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Integración del simulador CREATOR con hardware RISC-V: caso de estudio con microcontrolador ESP32",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon-Mateos, A., & Del-Pozo-Puñal, E.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon-Mateos, Del-Pozo-Puñal",
+    "venue": "XXXIII Jornadas de Paralelismo (JP23), Zenodo."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de Ficheros Distribuido para IoT basado en Expand",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., Camarmas-Alonso, D., & Calderon-Mateos, A.",
+    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso, Calderon-Mateos",
+    "venue": "XXXIII Jornadas de Paralelismo (JP23), Zenodo."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A new Ad-Hoc parallel file system for HPC environments based on the Expand parallel file system",
+    "authorsDisplay": "Garcia-Carballeira, F., Camarmas-Alonso, D., Caderon-Mateos, A., & Carretero, J.",
+    "authorsData": "Garcia-Carballeira, Camarmas-Alonso, Caderon-Mateos, Carretero",
+    "venue": "2023 22nd International Symposium on Parallel and Distributed Computing (ISPDC), IEEE."
+  },
+  {
+    "year": 2023,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "A scalable simulator for cloud, fog and edge computing platforms with mobility support",
+    "authorsDisplay": "Del-Pozo-Puñal, E., García-Carballeira, F., & Camarmas-Alonso, D.",
+    "authorsData": "Del-Pozo-Puñal, García-Carballeira, Camarmas-Alonso",
+    "venue": "Future Generation Computer Systems, vol. 144, pp. 117–130, Elsevier BV."
+  },
+  {
+    "year": 2023,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "CREATOR: a tool for teaching assembly programming with RISC-V",
+    "authorsDisplay": "Garcia-Carballeira, F., Camarmas-Alonso, D., Caderon-Mateos, A., & Del-Pozo-Punal, E.",
+    "authorsData": "Garcia-Carballeira, Camarmas-Alonso, Caderon-Mateos, Del-Pozo-Punal",
+    "venue": "RISC-V Summit Europe 2023."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Calderon Mateos, A., & Carretero, J.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Calderon Mateos, Carretero",
+    "venue": "XXXII Jornadas de Paralelismo (JP22), Zenodo."
+  },
+  {
+    "year": 2022,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Una propuesta para el uso de dispositivos móviles en SimGrid: Aplicación a las simulaciones de IoT",
+    "authorsDisplay": "Del-Pozo-Puñal, E., Garcia-Carballeira, F., & Camarmas-Alonso, D.",
+    "authorsData": "Del-Pozo-Puñal, Garcia-Carballeira, Camarmas-Alonso",
+    "venue": "XXXII Jornadas de Paralelismo (JP22), Zenodo."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "A new generic simulator for the teaching of assembly programming",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Del-Pozo-Punal, E., & Calderon-Mateos, A.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Del-Pozo-Punal, Calderon-Mateos",
+    "venue": "2021 XLVII Latin American Computing Conference (CLEI), IEEE."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "CREATOR: Simulador didáctico y genérico para la programación en ensamblador",
+    "authorsDisplay": "Camarmas-Alonso, D., Garcia-Carballeira, F., Del-Pozo-Puñal, E., & Calderon-Mateos, A.",
+    "authorsData": "Camarmas-Alonso, Garcia-Carballeira, Del-Pozo-Puñal, Calderon-Mateos",
+    "venue": "XXXI Jornadas de Paralelismo (JP20/21), Zenodo."
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "On the continuous contract verification using blockchain and real-time data",
+    "authorsDisplay": "Martinez-Rendon, C., Camarmas-Alonso, D., Carretero, J., & Gonzalez-Compean, J. L.",
+    "authorsData": "Martinez-Rendon, Camarmas-Alonso, Carretero, Gonzalez-Compean",
+    "venue": "Cluster Computing, Springer Science and Business Media LLC."
+  },
+  {
+    "year": 2021,
+    "type": "conference",
+    "badge": "Conf",
+    "title": "Validación de contratos en tiempo real de cadenas de suministro aplicando técnicas optimizadas en la tecnología Blockchain",
+    "authorsDisplay": "Martinez-Rendon, C., Camarmas-Alonso, D., Carretero, J., & Gonzalez-Compean, J. L.",
+    "authorsData": "Martinez-Rendon, Camarmas-Alonso, Carretero, Gonzalez-Compean",
+    "venue": "XXXI Jornadas de Paralelismo (JP20/21), Zenodo."
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "badge": "Jour",
+    "title": "Dynamic Resources Management for Exascale in ADMIRE Framework",
+    "authorsDisplay": "Carretero, J., Singh, D. E., Fernandez-Muñoz, J., Sedona, R., Pernice, S., Cantalupo, B., Aldinucci, M., Torquati, M., Tarraf, A., Jeannot, E., & others",
+    "authorsData": "Carretero, Singh, Fernandez-Muñoz, Sedona, Pernice, Cantalupo, Aldinucci, Torquati, Tarraf, Jeannot, others",
+    "venue": "Procedia Computer Science, vol. 267, pp. 165–175, Elsevier."
   }
 ]

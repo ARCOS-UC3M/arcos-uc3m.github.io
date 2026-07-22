@@ -16,7 +16,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <script src="scripts/components.js"></script>
+  <script src="scripts/components.js" defer></script>
+  <!-- Script to load the dynamic events on the homepage -->
+  <script src="scripts/index-events.js" defer></script>
 </head>
 
 <body id="page-body" class="bg-gray-50 text-gray-800 font-sans antialiased">
@@ -32,7 +34,6 @@
       <p class="mt-4 mx-auto text-xl text-gray-500 font-light leading-relaxed"> We combine theoretical
         research with practical experimentation to design
         efficient, scalable, and reliable computing systems. </p>
-      </p>
       <div class="mt-8 flex justify-center gap-4">
         <a href="#projects"
           class="px-6 py-3 bg-brand-600 text-white font-medium rounded-md hover:bg-brand-900 transition shadow-md">
@@ -273,7 +274,7 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">CREATOR</h4>
             <p class="text-sm text-gray-500">Didactic and Generic Assembly Programming Simulator</p>
           </div>
-          <a target="_blank" href="https://creatorsim.github.io/creator" target="_blank"
+          <a target="_blank" href="https://creatorsim.github.io/creator"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-solid fa-globe text-xl"></i>
           </a>
@@ -285,9 +286,20 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">DynoStore</h4>
             <p class="text-sm text-gray-500">DynoStore wide area storage system</p>
           </div>
-          <a target="_blank" href="https://dynostore.github.io/dynostore/" target="_blank"
+          <a target="_blank" href="https://dynostore.github.io/dynostore/"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-brands fa-github text-xl"></i>
+          </a>
+        </div>
+        <div
+          class="group flex items-center justify-between p-4 border rounded-lg hover:border-brand-600 transition cursor-pointer bg-white">
+          <div>
+            <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">EpiGraph</h4>
+            <p class="text-sm text-gray-500">Large-scale epidemiological simulator</p>
+          </div>
+          <a target="_blank" href="https://epigraph.uc3m.es/"
+            class="text-gray-400 hover:text-brand-600">
+            <i class="fa-solid fa-globe text-xl"></i>
           </a>
         </div>
 
@@ -297,7 +309,7 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">Expand</h4>
             <p class="text-sm text-gray-500">The Expand Parallel File System</p>
           </div>
-          <a target="_blank" href="https://github.com/xpn-arcos/xpn" target="_blank"
+          <a target="_blank" href="https://github.com/xpn-arcos/xpn"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-brands fa-github text-xl"></i>
           </a>
@@ -309,11 +321,11 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">HERCULES</h4>
             <p class="text-sm text-gray-500">HERCULES In-memory File System</p>
           </div>
-          <a target="_blank" href="https://arcos-uc3m-hercules.github.io/" target="_blank"
+          <a target="_blank" href="https://arcos-uc3m-hercules.github.io/"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-solid fa-globe text-xl"></i>
           </a>
-          <!-- <a target="_blank" href="https://github.com/arcos-uc3m-hercules/hercules" target="_blank"
+          <!-- <a target="_blank" href="https://github.com/arcos-uc3m-hercules/hercules"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-brands fa-github text-xl"></i>
           </a> -->
@@ -325,7 +337,7 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">LIMITLESS</h4>
             <p class="text-sm text-gray-500">LIght-weight MonItoring Tool for LargE Scale distributed System</p>
           </div>
-          <a target="_blank" href="https://github.com/acascajo/limitless-pub" target="_blank"
+          <a target="_blank" href="https://github.com/acascajo/limitless-pub"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-brands fa-github text-xl"></i>
           </a>
@@ -337,34 +349,22 @@
             <h4 class="font-bold text-gray-800 group-hover:text-brand-600 transition">WepSIM</h4>
             <p class="text-sm text-gray-500">The Web Elemental Processor SIMulator</p>
           </div>
-          <a target="_blank" href="https://wepsim.github.io/" target="_blank"
+          <a target="_blank" href="https://wepsim.github.io/"
             class="text-gray-400 hover:text-brand-600">
             <i class="fa-solid fa-globe text-xl"></i>
           </a>
         </div>
-  </section>
-
-  <section class="bg-brand-900 py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="text-white">
-        <h3 class="text-2xl font-bold mb-2">Upcoming Conferences</h3>
-        <p class="text-brand-100">SBAC-PAD 2026 & Jornadas Sarteco 2026</p>
-      </div>
-      <div class="flex gap-4">
-        <a target="_blank" href="https://coco-arcos.github.io/sbac-pad2026/"
-          class="px-5 py-2 bg-white text-brand-900 font-bold rounded shadow hover:bg-gray-100 transition">
-          SBAC-PAD Info
-        </a>
-        <a target="_blank" href="https://jornadassarteco.org"
-          class="px-5 py-2 border border-white text-white font-medium rounded hover:bg-brand-800 transition">
-          Jornadas Sarteco
-        </a>
       </div>
     </div>
   </section>
 
+  <!-- Dynamic Upcoming Events Section -->
+  <section id="upcoming-events-section" class="bg-brand-900 py-12" aria-hidden="true" style="display: none;">
+    <div id="index-upcoming-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <!-- Content injected by index-events.js -->
+    </div>
+  </section>
+
   <div id="footer-container"></div>
-
 </body>
-
 </html>
